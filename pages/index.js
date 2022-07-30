@@ -9,6 +9,7 @@ import WheelComponent from 'react-wheel-of-prizes'
 
 export default function Home() {
   let [characterName, setCharacterName] = useState("");
+  let [characterImage, setCharacterImage] = useState("");
 
   const segments = [
     'Astra',
@@ -54,6 +55,7 @@ export default function Home() {
 
   const onFinished = (winner) => {
     setCharacterName(winner);
+    setCharacterImage("/images/characters/" + winner.toLowerCase() + ".jpg");
   }
 
   return (
@@ -82,6 +84,7 @@ export default function Home() {
         />
 
         <h2>{characterName}</h2>
+        <img src={characterImage} />
       </main>
     </div>
   )

@@ -6,10 +6,13 @@ import { useState } from 'react'
 
 import WheelComponent from 'react-wheel-of-prizes'
 
+import ReactAudioPlayer from 'react-audio-player';
 
 export default function Home() {
   let [characterName, setCharacterName] = useState("");
   let [characterImage, setCharacterImage] = useState("");
+  let [characterVoiceLine, setCharacterVoiceLine] = useState("");
+
 
   const segments = [
     'Astra',
@@ -18,7 +21,7 @@ export default function Home() {
     'Chamber',
     'Cypher',
     'Jett',
-    'Kay/O',
+    'Kayo',
     'Killjoy',
     'Neon',
     'Omen',
@@ -56,6 +59,7 @@ export default function Home() {
   const onFinished = (winner) => {
     setCharacterName(winner);
     setCharacterImage("/images/characters/" + winner.toLowerCase() + ".jpg");
+    setCharacterVoiceLine("/voicelines/" + winner.toLowerCase() + ".mp3");
   }
 
   return (
@@ -85,6 +89,11 @@ export default function Home() {
 
         <h2>{characterName}</h2>
         <img src={characterImage} />
+
+        <ReactAudioPlayer
+          src={characterVoiceLine}
+          autoPlay="true"
+        />
       </main>
     </div>
   )

@@ -1,3 +1,5 @@
+
+
 .backgroundImageMap {
   width: 100%;
 
@@ -8,7 +10,7 @@
 .body {
   position: absolute;
   z-index: 5;
-  top: 0;
+  top: 172px;
 }
 
 .mapImageContainer {
@@ -28,13 +30,10 @@
 }
 
 .dropDown {
-  position: absolute;
-  z-index: 20;
   font-family: 'Couture';
-  color: white;
 }
 
 .dropDownControl {
+  color: white;
   background-color: transparent;
-  color: rgb(236,231,225);
 }

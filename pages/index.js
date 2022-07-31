@@ -27,26 +27,27 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <img className={styles.backgroundImageMap}src="images/darkened-maps/haven.png" />
+        <div>
+          <img className={styles.backgroundImageMap}src="images/darkened-maps/haven.png" />
 
-        <div className={styles.body}>
-          <div>
-            <div className={styles.mapImageContainer}>
-              <img className={styles.mapImage} src="images/maps/haven.png" />
+          <div className={styles.body}>
+            <div>
+              <div className={styles.mapImageContainer}>
+                <img className={styles.mapImage} src="images/maps/haven.png" />
+              </div>
+              <h2 className={styles.mapName}>Haven</h2>
+
+              
+              <Dropdown 
+              className={styles.dropDown} 
+              controlClassName={styles.dropDownControl}
+              options={valorantMaps} 
+              placeholder="Select your Map" />
             </div>
-            <h2 className={styles.mapName}>Haven</h2>
 
-            
-            <Dropdown 
-            className={styles.dropDown} 
-            controlClassName={styles.control}
-            menuClassName={styles.dropDownControl}
-            options={valorantMaps} 
-            placeholder="Select your Map" />;
-          </div>
+            <div>
 
-          <div>
-
+            </div>
           </div>
         </div>
       </main>

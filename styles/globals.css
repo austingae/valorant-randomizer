@@ -5,3 +5,60 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+* {
+  box-sizing: content-box;
+}
+
+.nav {
+
+  width: auto;
+  padding: 2rem 2rem 4rem 2rem;
+
+  /*
+  Parent Div's Width = Child Div's Width + Padding + Border + Width
+  1440px = width: auto, so () + (16px + 16px) + 0px + 0px
+  */
+
+  color: rgb(249,249,249);
+  background-color: rgb(16,16,16);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logoTitleContainer {
+  display: flex;
+  flex-direction: row;
+}
+.nav__logo {
+  width: 30px;
+
+  margin-right: 1rem;
+}
+
+.nav__title {
+  font-family: "Valorant";
+  font-size: 30px;
+  margin-block: 10px;
+}
+
+.nav__motto {
+  font-family: "Couture";
+  margin-top: 0rem;
+  font-size: 10px;
+
+  margin-left: 3rem;
+}
+
+.nav__link {
+  font-family: "Couture";
+  color: white;
+  text-decoration: none;
+}
+
+.nav__link--marginRight {
+  margin-right: 1.3rem;
+}

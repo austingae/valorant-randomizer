@@ -31,8 +31,10 @@
   position: absolute;
   z-index: 20;
   font-family: 'Couture';
+  color: white;
 }
 
-.control {
+.dropDownControl {
   background-color: transparent;
+  color: rgb(236,231,225);
 }

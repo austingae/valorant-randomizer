@@ -40,7 +40,7 @@ export default function Home() {
             <Dropdown 
             className={styles.dropDown} 
             controlClassName={styles.control}
-
+            menuClassName={styles.dropDownControl}
             options={valorantMaps} 
             placeholder="Select your Map" />;
           </div>

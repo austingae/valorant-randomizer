@@ -1,3 +1,10 @@
+@media screen and (min-width: 0px) and (max-width: 1439px) {
+  .ValorantRandomizerScreen {
+    display: none;
+  }
+}
+
+
 html,
 body {
   padding: 0;
@@ -21,7 +28,7 @@ body {
   */
 
   color: rgb(249,249,249);
-  background-color: rgb(16,16,16);
+  background-color: rgb(51,58,64);
 
   display: flex;
   flex-direction: row;
@@ -43,6 +50,14 @@ body {
   font-family: "Valorant";
   font-size: 30px;
   margin-block: 10px;
+
+  transition-duration: 1.5s;
+
+  cursor: pointer;
+}
+
+.nav__title:hover {
+  color: rgb(235,78,92);
 }
 
 .nav__motto {
@@ -57,8 +72,13 @@ body {
   font-family: "Couture";
   color: white;
   text-decoration: none;
+  transition-duration: 1.5s;
 }
 
 .nav__link--marginRight {
   margin-right: 1.3rem;
+}
+
+.nav__link:hover {
+  color: rgb(235,78,92);
 }

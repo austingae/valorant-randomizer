@@ -24,6 +24,15 @@ class MyDocument extends Document {
             type="font/ttf"
             crossOrigin="anonymous"
           />
+
+<link
+            rel="preload"
+            href="/fonts/couture-font.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          
         </Head>
         <body>
           <Main />

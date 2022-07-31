@@ -4,3 +4,9 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Couture";
+  src: url("/fonts/couture-font.ttf") format("truetype");
+  font-weight: bold;
+}

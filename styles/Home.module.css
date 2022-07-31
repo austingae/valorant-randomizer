@@ -1,0 +1,38 @@
+.backgroundImageMap {
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+}
+
+.body {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+}
+
+.mapImageContainer {
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: rgb(235,78,92);
+}
+.mapImage {
+  width: 250px;
+  margin: 0.5rem;
+}
+
+.mapName {
+  font-family: 'Couture';
+  font-size: 30px;
+  color: rgb(236,231,225);
+}
+
+.dropDown {
+  position: absolute;
+  z-index: 20;
+  font-family: 'Couture';
+}
+
+.control {
+  background-color: transparent;
+}

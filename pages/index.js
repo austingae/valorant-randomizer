@@ -2,65 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import { useState } from 'react'
+import Dropdown from 'react-dropdown';
+import '../node_modules/react-dropdown/style.css';
 
-import WheelComponent from 'react-wheel-of-prizes'
-
-import ReactAudioPlayer from 'react-audio-player';
 
 export default function Home() {
-  let [characterName, setCharacterName] = useState("");
-  let [characterImage, setCharacterImage] = useState("");
-  let [characterVoiceLine, setCharacterVoiceLine] = useState("");
 
-
-  const segments = [
-    'Astra',
-    'Breach',
-    'Brimstone',
-    'Chamber',
-    'Cypher',
-    'Jett',
-    'Kayo',
-    'Killjoy',
-    'Neon',
-    'Omen',
-    'Phoenix',
-    'Raze',
-    'Reyna',
-    'Sage',
-    'Skye',
-    'Sova',
-    'Viper',
-    'Yoru',
-  ]
-  
-  const segColors = [
-    'rgb(92,49,123)',
-    'rgb(252,118,39)',
-    'rgb(54,77,96)',
-    'rgb(228,175,65)',
-    'rgb(185,185,185)',
-    'rgb(167,232,254)',
-    'rgb(19,38,128)',
-    'rgb(255,240,48)',
-    'rgb(78,250,200)',
-    'rgb(125,126,193)',
-    'rgb(253,203,119)',
-    'rgb(255,100,15)',
-    'rgb(189,81,176)',
-    'rgb(35,252,215)',
-    'rgb(209,216,84)',
-    'rgb(105,186,240)',
-    'rgb(35,174,52)',
-    'rgb(36,83,208)',
-  ]
-
-  const onFinished = (winner) => {
-    setCharacterName(winner);
-    setCharacterImage("/images/characters/" + winner.toLowerCase() + ".jpg");
-    setCharacterVoiceLine("/voicelines/" + winner.toLowerCase() + ".mp3");
-  }
+  const valorantMaps = [
+    'Ascent',
+    'Bind',
+    'Breeze',
+    'Fracture',
+    'Haven',
+    'Icebox',
+    'Pearl'
+  ];
 
   return (
     <div className={styles.container}>
@@ -71,29 +27,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title} style={{fontFamily: "Valorant"}}>Valorant Randomizer</h1>
+        <img className={styles.backgroundImageMap}src="images/darkened-maps/haven.png" />
 
-        <WheelComponent
-          segments={segments}
-          segColors={segColors}
-          onFinished={(winner) => onFinished(winner)}
-          primaryColor='black'
-          contrastColor='white'
-          buttonText='Spin'
-          isOnlyOnce={false}
-          size={250}
-          upDuration={10}
-          downDuration={400}
-          fontFamily='Valorant'
-        />
+        <div className={styles.body}>
+          <div>
+            <div className={styles.mapImageContainer}>
+              <img className={styles.mapImage} src="images/maps/haven.png" />
+            </div>
+            <h2 className={styles.mapName}>Haven</h2>
 
-        <h2>{characterName}</h2>
-        <img src={characterImage} />
+            
+            <Dropdown 
+            className={styles.dropDown} 
+            controlClassName={styles.control}
 
-        <ReactAudioPlayer
-          src={characterVoiceLine}
-          autoPlay="true"
-        />
+            options={valorantMaps} 
+            placeholder="Select your Map" />;
+          </div>
+
+          <div>
+
+          </div>
+        </div>
       </main>
     </div>
   )

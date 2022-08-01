@@ -1,0 +1,15 @@
+.characterContainer {
+  border-style: solid;
+  border-color: rgb(235,78,92);
+  height: 170px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.characterImage {
+  width: 140px;
+}
+
+.characterName {
+  color: rgb(236,231,225);
+}

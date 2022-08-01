@@ -7,6 +7,8 @@ import '../node_modules/react-dropdown/style.css';
 
 import { useState } from 'react';
 
+import Character from '../components/character/character';
+
 export default function Home() {
 
   const valorantMaps = [
@@ -24,8 +26,12 @@ export default function Home() {
   let setValorantMapFunction = (valorantMapObject) => {
     setValorantMap(valorantMapObject.value.toLowerCase());
   }
-  
 
+  const valorantCharacterNames = [
+    'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Jett', 'Kayo', 'Killjoy', 'Neon',
+    'Omen', 'Phoenix', 'Raze', 'Reyna', 'Sage', 'Skye', 'Sova', 'Viper', 'Yoru'
+  ]
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -35,11 +41,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div>
           <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".png"} />
 
           <div className={styles.body}>
-            <div>
+            {/* Left Section: Map Image, Map Name, and Map Selection*/}
+            <div className={styles.leftSection}>
               <div className={styles.mapImageContainer}>
                 <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".png"} />
               </div>
@@ -55,10 +61,16 @@ export default function Home() {
                />
             </div>
 
-            <div>
-
+            {/*Right Section: Character Selection & Randomize Button*/}
+            <div className={styles.characterSelection}>
+              {
+                valorantCharacterNames.map((valorantCharacterName) => {
+                  return (
+                    <Character name={valorantCharacterName} />
+                  )
+                })
+              }
             </div>
-          </div>
         </div>
       </main>
     </div>

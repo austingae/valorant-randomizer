@@ -66,7 +66,7 @@ export default function Home() {
               {
                 valorantCharacterNames.map((valorantCharacterName) => {
                   return (
-                    <Character name={valorantCharacterName} />
+                    <Character name={valorantCharacterName} key={valorantCharacterName}/>
                   )
                 })
               }

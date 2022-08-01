@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Dropdown from 'react-dropdown';
 import '../node_modules/react-dropdown/style.css';
 
+import { useState } from 'react';
 
 export default function Home() {
 
@@ -18,6 +19,13 @@ export default function Home() {
     'Pearl'
   ];
 
+  let [valorantMap, setValorantMap] = useState("haven");
+
+  let setValorantMapFunction = (valorantMapObject) => {
+    setValorantMap(valorantMapObject.value.toLowerCase());
+  }
+  
+
   return (
     <div className={styles.container}>
       <Head>
@@ -28,12 +36,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <img className={styles.backgroundImageMap}src="images/darkened-maps/haven.png" />
+          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".png"} />
 
           <div className={styles.body}>
             <div>
               <div className={styles.mapImageContainer}>
-                <img className={styles.mapImage} src="images/maps/haven.png" />
+                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".png"} />
               </div>
               <h2 className={styles.mapName}>Haven</h2>
 
@@ -42,7 +50,9 @@ export default function Home() {
               className={styles.dropDown} 
               controlClassName={styles.dropDownControl}
               options={valorantMaps} 
-              placeholder="Select your Map" />
+              placeholder="Select your Map"
+              onChange={setValorantMapFunction}
+               />
             </div>
 
             <div>

@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import Dropdown from 'react-dropdown';
 import '../node_modules/react-dropdown/style.css';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import Character from '../components/character/character';
 
@@ -30,8 +30,80 @@ export default function Home() {
   const valorantCharacterNames = [
     'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Jett', 'Kayo', 'Killjoy', 'Neon',
     'Omen', 'Phoenix', 'Raze', 'Reyna', 'Sage', 'Skye', 'Sova', 'Viper', 'Yoru'
-  ]
-  
+  ];
+
+  const delay = ms => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+
+  function changeCharacterBorderColor() {
+    let randomCharacterNames = [];
+
+    const characterNames = [
+      'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Jett', 'Kayo', 'Killjoy', 'Neon',
+      'Omen', 'Phoenix', 'Raze', 'Reyna', 'Sage', 'Skye', 'Sova', 'Viper', 'Yoru'
+    ];
+
+    for (let i = 0; i < 6; i++) {
+      let index = Math.floor(Math.random() * characterNames.length);
+      const randomValorantCharacterName = characterNames[index];
+      randomCharacterNames.push(randomValorantCharacterName);
+      characterNames.splice(index, 1);
+    }
+
+    console.log(randomCharacterNames);
+  }
+
+
+  let [valorantCharacters, setValorantCharacters] = useState(
+    [
+      {
+        name: 'Astra',
+        borderColor: 'red',
+      },
+      {
+        name: 'Breach',
+        borderColor: 'red',
+      },
+      {
+        name: 'Brimstone',
+        borderColor: 'red',
+      },
+      {
+        name: 'Chamber',
+        borderColor: 'red',
+      }
+    ]
+  ) 
+
+  /*
+  let [astra, setAstra] = useState('red');
+  let [breach, setBreach] = useState('red');
+  let [brimstone, setBrimstone] = useState('red');
+  let [chamber, setChamber] = useState('red');
+  let [cypher, setCypher] = useState('red');
+  let [jett, setJett] = useState('red');
+  let [kayo, setKayo] = useState('red');
+  let [killjoy, setKilljoy] = useState('red');
+  let [neon, setNeon] = useState('red');
+  let [omen, setOmen] = useState('red');
+  let [phoenix, setPhoenix] = useState('red');
+  let [raze, setRaze] = useState('red');
+  let [reyna, setReyna] = useState('red');
+  let [sage, setSage] = useState('red');
+  let [skye, setSkye] = useState('red');
+  let [sova, setSova] = useState('red');
+  let [viper, setViper] = useState('red');
+  let [yoru, setYoru] = useState('red');
+  */
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -59,17 +131,102 @@ export default function Home() {
               placeholder="Select your Map"
               onChange={setValorantMapFunction}
                />
+
+               <button onClick={changeCharacterBorderColor}>Roll your Character</button>
             </div>
 
             {/*Right Section: Character Selection & Randomize Button*/}
             <div className={styles.characterSelection}>
-              {
-                valorantCharacterNames.map((valorantCharacterName) => {
-                  return (
-                    <Character name={valorantCharacterName} key={valorantCharacterName}/>
-                  )
-                })
-              }
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "astra" + ".png"} />
+                  <h3 className={styles.characterName}>Astra</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "breach" + ".png"} />
+                  <h3 className={styles.characterName}>Breach</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "brimstone" + ".png"} />
+                  <h3 className={styles.characterName}>Brimstone</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "chamber" + ".png"} />
+                  <h3 className={styles.characterName}>Chamber</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "cypher" + ".png"} />
+                  <h3 className={styles.characterName}>Cypher</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "jett" + ".png"} />
+                  <h3 className={styles.characterName}>Jett</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "kayo" + ".png"} />
+                  <h3 className={styles.characterName}>KAY/O</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "killjoy" + ".png"} />
+                  <h3 className={styles.characterName}>Killjoy</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "neon" + ".png"} />
+                  <h3 className={styles.characterName}>Neon</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "omen" + ".png"} />
+                  <h3 className={styles.characterName}>Omen</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "phoenix" + ".png"} />
+                  <h3 className={styles.characterName}>Phoenix</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "raze" + ".png"} />
+                  <h3 className={styles.characterName}>Raze</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "reyna" + ".png"} />
+                  <h3 className={styles.characterName}>Reyna</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "sage" + ".png"} />
+                  <h3 className={styles.characterName}>Sage</h3>
+                </div>
+
+                <div className={styles.characterContainer} >
+                  <img className={styles.characterImage} src={"/images/characters/" + "skye" + ".png"} />
+                  <h3 className={styles.characterName}>Skye</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "sova" + ".png"} />
+                  <h3 className={styles.characterName}>Sova</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "viper" + ".png"} />
+                  <h3 className={styles.characterName}>Viper</h3>
+                </div>
+
+                <div className={styles.characterContainer}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "yoru" + ".png"} />
+                  <h3 className={styles.characterName}>Yoru</h3>
+                </div>
+
             </div>
         </div>
       </main>

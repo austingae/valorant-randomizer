@@ -60,3 +60,30 @@
   column-gap: 0.5rem;
   row-gap: 1rem;
 }
+
+.characterContainer {
+  border-style: solid;
+  border-color: rgb(235,78,92);
+  height: 170px;
+  overflow: hidden;
+  padding: 1rem;
+
+  position: relative;
+}
+
+.characterImage {
+  width: 140px;
+}
+
+.characterName {
+  color: rgb(236,231,225);
+
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+
+  font-family: "Couture";
+
+  margin: 0rem;
+  margin-bottom: 0.5rem;
+}

@@ -27,15 +27,12 @@ export default function Home() {
 
   useEffect(() => {
     let randomIndex = Math.floor(Math.random() * valorantMaps.length);
-    let randomMap = valorantMaps[randomIndex];
+    let randomMap = valorantMaps[randomIndex].toLowerCase();
     setValorantMap(randomMap);
   }, []);
 
   let [valorantMap, setValorantMap] = useState();
 
-  let setValorantMapFunction = (valorantMapObject) => {
-    setValorantMap(valorantMapObject.value.toLowerCase());
-  }
 
   const valorantCharacterNames = [
     'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Fade', 'Jett', 'Kayo', 'Killjoy', 'Neon',

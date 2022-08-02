@@ -2,6 +2,8 @@
 .backgroundImageMap {
   width: 100%;
 
+  height: 650px;
+
   position: relative;
   z-index: 1;
 }
@@ -32,6 +34,7 @@
 
 .mapImage {
   width: 270px;
+  height: 160px;
   margin: 0.3rem;
 }
 
@@ -53,6 +56,8 @@
 .chosenCharacterContainer {
   text-align: center;
   height: 383.305px;
+
+  margin-bottom: 1.5rem;
 }
 
 .chosenCharacter {
@@ -69,7 +74,6 @@
 .characterContainer {
   border-style: solid;
   border-width: 0.05rem;
-
 }
 .characterImage {
   width: 75px;

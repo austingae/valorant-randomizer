@@ -44,15 +44,15 @@ function MyApp({ Component, pageProps }) {
           </div>
 
           <div className='nav__rightSection'>
-            <Link href=''>
+            <Link href='/'>
               <a className='nav__link nav__link--marginRight'>Randomizer</a>
             </Link>
 
-            <Link href='tutorial'>
-              <a className='nav__link nav__link--marginRight'>Tutorial</a>
+            <Link href='/how-to-use/'>
+              <a className='nav__link nav__link--marginRight'>How To Use</a>
             </Link>
 
-            <Link href='share-ideas'>
+            <Link href='/share-your-ideas/'>
             <a className='nav__link'>Share Your Ideas</a>
             </Link>
           </div>

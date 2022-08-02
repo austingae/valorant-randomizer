@@ -7,14 +7,20 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <div className='ValorantRandomizerScreenNotShowing'>
-        <img src="/images/logos/valorant-logo.svg" style={{width: '50px'}}/>
-        <h2>Valorant Randomizer</h2>
-        <p>Randomize Your Character, Guns, and Missions.</p>
-        <h2>Hello!</h2>
-        <p>You are seeing this message because you are trying to view this website on a small screen-size device, such as your phone or tablet. The Valorant Randomizer, because of its functionalities, only works on a laptop or computer, or devices with screen sizes that are over 1440px. If you are continuing to experience difficulties, please contact us at playvalorantrandomizer@gmail.com</p>
-        <p>Thank you, and have a wonderful day!</p>
-        <p>- Valorant Randomizer Developer Team</p>
+      <div className='ValorantRandomizerScreenNotShowing' style={{padding: '1rem'}}>
+        <div style={{backgroundImage: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,29,1) 53%, rgba(255,70,86,1) 100%)', padding: '1rem', marginBottom: '2rem'}}>
+          <img src="/images/logos/valorant-logo.svg" style={{width: '50px'}}/>
+          <h2 style={{fontFamily: "Valorant", fontSize: '35px', marginBottom: '0rem', color: 'rgb(249,249,249)'}}>Valorant Randomizer</h2>
+          <p style={{fontFamily: "Couture", marginTop: '0.5rem', marginLeft: '0.5rem', color: 'rgb(249,249,249)'}}>Randomize Your Character, Guns, and Missions.</p>
+        </div>
+        <h2>Hello There,</h2>
+        <p style={{lineHeight: '1.5rem'}}>You are seeing this message because you are trying to view this website on a small screen-sized device, such as your
+          phone or tablet. The Valorant Randomizer, due to its functionalities, only works on devices with screen size larger
+          than 1440px, such as your laptop or computer. If you are continuing to see this message, we will be happy to assist you 
+          at playvalorantrandomizer@gmail.com 
+        </p>
+        <p>Thank you for your understanding, and have a wonderful day!</p>
+        <p style={{marginTop: '2rem'}}>- Valorant Randomizer Developer Team</p>
 
       </div>
       <div className='ValorantRandomizerScreen'>

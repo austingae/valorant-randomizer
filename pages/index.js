@@ -7,8 +7,6 @@ import '../node_modules/react-dropdown/style.css';
 
 import { useState, useRef } from 'react';
 
-import Character from '../components/character/character';
-
 export default function Home() {
 
   const valorantMaps = [
@@ -32,13 +30,6 @@ export default function Home() {
     'Omen', 'Phoenix', 'Raze', 'Reyna', 'Sage', 'Skye', 'Sova', 'Viper', 'Yoru'
   ];
 
-  const delay = ms => new Promise(
-    resolve => setTimeout(resolve, ms)
-  );
-
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
 
 
   function changeCharacterBorderColor() {
@@ -59,28 +50,14 @@ export default function Home() {
   let [chosenValorantCharacter, setChosenValorantCharacter] = useState("");
 
 
-  /*
-  let [astra, setAstra] = useState('red');
-  let [breach, setBreach] = useState('red');
-  let [brimstone, setBrimstone] = useState('red');
-  let [chamber, setChamber] = useState('red');
-  let [cypher, setCypher] = useState('red');
-  let [jett, setJett] = useState('red');
-  let [kayo, setKayo] = useState('red');
-  let [killjoy, setKilljoy] = useState('red');
-  let [neon, setNeon] = useState('red');
-  let [omen, setOmen] = useState('red');
-  let [phoenix, setPhoenix] = useState('red');
-  let [raze, setRaze] = useState('red');
-  let [reyna, setReyna] = useState('red');
-  let [sage, setSage] = useState('red');
-  let [skye, setSkye] = useState('red');
-  let [sova, setSova] = useState('red');
-  let [viper, setViper] = useState('red');
-  let [yoru, setYoru] = useState('red');
-  */
-
-
+  //every time the website refreshes, cypher or fade character will show up
+  let cypherOrFade;
+  if (Math.random() > 0.49) {
+    cypherOrFade = true;
+  }
+  else {
+    cypherOrFade = false;
+  }
 
   return (
     <div className={styles.container}>
@@ -135,10 +112,19 @@ export default function Home() {
                   <h3 className={styles.characterName}>Chamber</h3>
                 </div>
 
+                {cypherOrFade == true && 
                 <div className={styles.characterContainer}  style={{borderColor: chosenValorantCharacter == "Cypher" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Cypher" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                   <img className={styles.characterImage} src={"/images/characters/" + "cypher" + ".png"} />
                   <h3 className={styles.characterName}>Cypher</h3>
                 </div>
+                }
+
+                {cypherOrFade == false && 
+                <div className={styles.characterContainer}  style={{borderColor: chosenValorantCharacter == "Fade" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Fade" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
+                  <img className={styles.characterImage} src={"/images/characters/" + "fade" + ".png"} />
+                  <h3 className={styles.characterName}>Fade</h3>
+                </div>
+                }
 
                 <div className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == "Jett" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Jett" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                   <img className={styles.characterImage} src={"/images/characters/" + "jett" + ".png"} />

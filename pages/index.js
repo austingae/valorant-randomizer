@@ -25,14 +25,15 @@ export default function Home() {
     'Pearl'
   ];
 
+  //A map randomly chosen and displayed on the website page.
+
+  let [valorantMap, setValorantMap] = useState();
+
   useEffect(() => {
     let randomIndex = Math.floor(Math.random() * valorantMaps.length);
     let randomMap = valorantMaps[randomIndex].toLowerCase();
     setValorantMap(randomMap);
   }, []);
-
-  let [valorantMap, setValorantMap] = useState();
-
 
   const valorantCharacterNames = [
     'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Fade', 'Jett', 'Kayo', 'Killjoy', 'Neon',
@@ -105,7 +106,7 @@ export default function Home() {
                   })
                 }
               </div>
-
+              
               <ReactAudioPlayer
                 src={characterVoiceLine}
                 autoPlay="true"

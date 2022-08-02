@@ -30,6 +30,7 @@ export async function getStaticPaths() {
   }
 }
 
+
 export async function getStaticProps(pageContext) {
   const character = pageContext.params.character;
   return {

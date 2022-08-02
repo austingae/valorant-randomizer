@@ -1,0 +1,120 @@
+[
+  {
+    "id": "astra",
+    "name": "Astra",
+    "role": "Controller",
+    "missions": []
+  },
+  {
+    "id": "breach",
+    "name": "Breach",
+    "role": "Initator",
+    "missions": []
+  },
+  {
+    "id": "brimstone",
+    "name": "Brimstone",
+    "role": "Controller",
+    "missions": []
+  },
+  {
+    "id": "chamber",
+    "name": "Chamber",
+    "role": "Sentinel",
+    "missions": []
+  },
+  {
+    "id": "cypher",
+    "name": "Cypher",
+    "role": "Sentinel",
+    "missions": []
+  },
+  {
+    "id": "fade",
+    "name": "Fade",
+    "role": "Initator",
+    "missions": []
+  },
+  {
+    "id": "jett",
+    "name": "Jett",
+    "role": "Duelist",
+    "missions": []
+  },
+  {
+    "id": "kayo",
+    "name": "Kayo",
+    "role": "Initator",
+    "missions": []
+  },
+  {
+    "id": "killjoy",
+    "name": "Killjoy",
+    "role": "Sentinel",
+    "missions": []
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "role": "Duelist",
+    "missions": []
+  },
+  {
+    "id": "omen",
+    "name": "Omen",
+    "role": "Controller",
+    "missions": []
+  },
+  {
+    "id": "phoenix",
+    "name": "Phoenix",
+    "role": "Duelist",
+    "missions": []
+  },
+  {
+    "id": "raze",
+    "name": "Raze",
+    "role": "Duelist",
+    "missions": []
+  },
+  {
+    "id": "reyna",
+    "name": "Reyna",
+    "role": "Duelist",
+    "missions": []
+  },
+  {
+    "id": "sage",
+    "name": "Sage",
+    "role": "Sentinel",
+    "missions": [
+      {
+        "mission": "You are just a healer! Only use your abilities, including your heal -- but not your gun!"
+      }
+    ]
+  },
+  {
+    "id": "skye",
+    "name": "Skye",
+    "role": "Initator",
+    "missions": []
+  },
+  {
+    "id": "sova",
+    "name": "Sova",
+    "role": "Initiator",
+    "missions": []
+  },
+  {
+    "id": "viper",
+    "name": "Viper",
+    "role": "Controller",
+    "missions": []
+  },
+  {
+    "id": "yoru",
+    "name": "Yoru",
+    "role": "Duelist",
+    "missions": []
+  }
+]

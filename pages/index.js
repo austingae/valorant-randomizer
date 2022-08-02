@@ -7,7 +7,10 @@ import '../node_modules/react-dropdown/style.css';
 
 import { useState, useRef } from 'react';
 
+import { useRouter } from 'next/router'
 export default function Home() {
+
+  const router = useRouter();
 
   const valorantMaps = [
     'Ascent',
@@ -45,6 +48,10 @@ export default function Home() {
     TheChosenOne = characterNames[index];
 
     setChosenValorantCharacter(TheChosenOne);
+
+    setTimeout(() => {
+      router.push(`/characters/${TheChosenOne.toLowerCase()}`);
+    }, 2000)
   }
 
   let [chosenValorantCharacter, setChosenValorantCharacter] = useState("");

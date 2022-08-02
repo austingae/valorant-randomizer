@@ -99,7 +99,7 @@ export default function Home() {
               <div className={styles.mapImageContainer}>
                 <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".png"} />
               </div>
-              <h2 className={styles.mapName}>Haven</h2>
+              <h2 className={styles.mapName}>{valorantMap}</h2>
 
               
               <Dropdown 

@@ -86,6 +86,6 @@
   }
 
   .nav__link:hover {
-    color: rgb(235,78,92);
+   color: rgba(2,0,36,1);
   }
 }

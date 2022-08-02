@@ -87,3 +87,27 @@
   margin: 0rem;
   margin-bottom: 0.5rem;
 }
+
+.rollYourCharacterButton {
+  color: rgb(236,232,225);
+  background-image: linear-gradient(to right, rgb(182, 52, 63), rgb(255,70,86), rgb(97, 66, 66));
+
+  font-family: 'Couture';
+
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  border: none;
+
+  display: block;
+  margin-inline: auto;
+  margin-top: 7rem;
+
+  cursor: pointer;
+
+  transition: background-position 1s ease-out;  
+
+}
+
+.rollYourCharacterButton:hover {
+  background-position:204px; 
+
+}

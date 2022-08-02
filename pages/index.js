@@ -101,7 +101,7 @@ export default function Home() {
                 {
                   valorantCharacterNames.map((characterName) => {
                     return (
-                      <div className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == characterName ? 'gold' : 'rgb(204,204,204)', boxShadow: chosenValorantCharacter == characterName ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
+                      <div key={characterName} className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == characterName ? 'gold' : 'rgb(204,204,204)', boxShadow: chosenValorantCharacter == characterName ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                         <img className={styles.characterImage} src={'/images/characters-icons/' + characterName.toLowerCase() + '.png'} />
                       </div>
                     )

@@ -7,6 +7,8 @@ import '../node_modules/react-dropdown/style.css';
 
 import { useState, useRef } from 'react';
 
+import ReactAudioPlayer from 'react-audio-player';
+
 import { useRouter } from 'next/router'
 export default function Home() {
 
@@ -48,13 +50,16 @@ export default function Home() {
     TheChosenOne = characterNames[index];
 
     setChosenValorantCharacter(TheChosenOne);
+    setCharacterVoiceLine('/voicelines/' + TheChosenOne.toLowerCase() + '.mp3');
 
     setTimeout(() => {
       router.push(`/characters/${TheChosenOne.toLowerCase()}`);
-    }, 2000)
+    }, 3500)
   }
 
   let [chosenValorantCharacter, setChosenValorantCharacter] = useState("");
+
+  let [characterVoiceLine, setCharacterVoiceLine] = useState("");
 
 
   //every time the website refreshes, cypher or fade character will show up
@@ -197,6 +202,11 @@ export default function Home() {
                   <img className={styles.characterImage} src={"/images/characters/" + "yoru" + ".png"} />
                   <h3 className={styles.characterName}>Yoru</h3>
                 </div>
+
+                <ReactAudioPlayer
+                  src={characterVoiceLine}
+                  autoPlay="true"
+                />
 
             </div>
         </div>

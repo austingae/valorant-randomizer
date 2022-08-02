@@ -3,7 +3,14 @@ import '../styles/globals.css'
 import "../styles/fonts.css"
 
 import Link from 'next/link'
+
+import ReactAudioPlayer from 'react-audio-player';
+
+import { useState } from 'react';
+
 function MyApp({ Component, pageProps }) {
+
+  let [valorantMusic, setValorantMusic] = useState(false);
 
   return (
     <>
@@ -29,7 +36,16 @@ function MyApp({ Component, pageProps }) {
             <Link href='/'>
               <div className='nav__logoTitleContainer'>
                 <img className='nav__logo' src='/images/logos/valorant-logo.svg' />
-                <h1 className='nav__title'>Valorant <span>Ra</span><span>nd</span><span>om</span><span>iz</span><span>er</span></h1>
+                <h1 
+                  className='nav__title' 
+                  onMouseOver={() => {
+                  setValorantMusic(true);
+                  }}
+                  onMouseLeave={() => {
+                    setValorantMusic(false);
+                  }}
+                
+                >Valorant <span>Ra</span><span>nd</span><span>om</span><span>iz</span><span>er</span></h1>
               </div>
             </Link>
             <p className='nav__motto'>Randomize Your Character, Guns, and Missions.</p>
@@ -49,6 +65,12 @@ function MyApp({ Component, pageProps }) {
             </Link>
           </div>
         </nav>
+
+        {valorantMusic && <ReactAudioPlayer 
+          src='/music/valorant.mp3'
+          autoPlay='true'
+        />
+        }
       
         <Component {...pageProps} />
       </div>

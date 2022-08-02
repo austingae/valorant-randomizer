@@ -60,11 +60,10 @@
     transition-duration: 1.5s;
 
     cursor: pointer;
+
+    color: rgba(255,70,86,1);
   }
 
-  .nav__title:hover {
-    color: rgb(235,78,92);
-  }
 
   .nav__motto {
     font-family: "Couture";

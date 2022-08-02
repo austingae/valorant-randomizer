@@ -54,7 +54,7 @@ export default function Home() {
 
     setTimeout(() => {
       router.push(`/characters/${TheChosenOne.toLowerCase()}`);
-    }, 3500)
+    }, 4300)
   }
 
   let [chosenValorantCharacter, setChosenValorantCharacter] = useState("");

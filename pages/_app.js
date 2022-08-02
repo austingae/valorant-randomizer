@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
                     setValorantMusic(false);
                   }}
                 
-                >Valorant <span>Ra</span><span>nd</span><span>om</span><span>iz</span><span>er</span></h1>
+                >Valorant Randomizer</h1>
               </div>
             </Link>
             <p className='nav__motto'>Randomize Your Character, Guns, and Missions.</p>

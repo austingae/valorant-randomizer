@@ -10,6 +10,7 @@ import { useState, useRef } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
 import { useRouter } from 'next/router'
+
 export default function Home() {
 
   const router = useRouter();
@@ -31,7 +32,7 @@ export default function Home() {
   }
 
   const valorantCharacterNames = [
-    'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Jett', 'Kayo', 'Killjoy', 'Neon',
+    'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Fade', 'Jett', 'Kayo', 'Killjoy', 'Neon',
     'Omen', 'Phoenix', 'Raze', 'Reyna', 'Sage', 'Skye', 'Sova', 'Viper', 'Yoru'
   ];
 
@@ -60,16 +61,6 @@ export default function Home() {
   let [chosenValorantCharacter, setChosenValorantCharacter] = useState("");
 
   let [characterVoiceLine, setCharacterVoiceLine] = useState("");
-
-
-  //every time the website refreshes, cypher or fade character will show up
-  let cypherOrFade;
-  if (Math.random() > 0.49) {
-    cypherOrFade = true;
-  }
-  else {
-    cypherOrFade = false;
-  }
 
   return (
     <div className={styles.container}>
@@ -102,8 +93,33 @@ export default function Home() {
                <button className={styles.rollYourCharacterButton} onClick={changeCharacterBorderColor}>Roll your Character</button>
             </div>
 
-            {/*Right Section: Character Selection & Randomize Button*/}
-            <div className={styles.characterSelection}>
+            {/*Right Section: Character Selection & Randomize Button */}
+            <div className={styles.rightSection}>
+              <div className={styles.chosenCharacterContainer}>
+                
+                {chosenValorantCharacter.length > 1 && <img className={styles.chosenCharacter} src={'/images/characters/' + chosenValorantCharacter.toLowerCase() + '.png'} />}
+              </div>
+
+              <div className={styles.characterSelection}>
+                {
+                  valorantCharacterNames.map((characterName) => {
+                    return (
+                      <div className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == characterName ? 'gold' : 'rgb(204,204,204)', boxShadow: chosenValorantCharacter == characterName ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
+                        <img className={styles.characterImage} src={'/images/characters-icons/' + characterName.toLowerCase() + '.png'} />
+                      </div>
+                    )
+                  })
+                }
+              </div>
+
+
+              {/*
+
+                <div className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == "Astra" ? 'gold' : 'rgb(243,243,244)', boxShadow: chosenValorantCharacter == "Astra" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
+                  <img className={styles.characterImage} src={"/images/characters-icons/" + "astra" + ".png"} />
+                </div>
+
+
                 <div className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == "Astra" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Astra" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                   <img className={styles.characterImage} src={"/images/characters/" + "astra" + ".png"} />
                   <h3 className={styles.characterName}>Astra</h3>
@@ -124,19 +140,15 @@ export default function Home() {
                   <h3 className={styles.characterName}>Chamber</h3>
                 </div>
 
-                {cypherOrFade == true && 
                 <div className={styles.characterContainer}  style={{borderColor: chosenValorantCharacter == "Cypher" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Cypher" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                   <img className={styles.characterImage} src={"/images/characters/" + "cypher" + ".png"} />
                   <h3 className={styles.characterName}>Cypher</h3>
                 </div>
-                }
 
-                {cypherOrFade == false && 
                 <div className={styles.characterContainer}  style={{borderColor: chosenValorantCharacter == "Fade" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Fade" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                   <img className={styles.characterImage} src={"/images/characters/" + "fade" + ".png"} />
                   <h3 className={styles.characterName}>Fade</h3>
                 </div>
-                }
 
                 <div className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == "Jett" ? 'gold' : 'red', boxShadow: chosenValorantCharacter == "Jett" ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
                   <img className={styles.characterImage} src={"/images/characters/" + "jett" + ".png"} />
@@ -202,6 +214,7 @@ export default function Home() {
                   <img className={styles.characterImage} src={"/images/characters/" + "yoru" + ".png"} />
                   <h3 className={styles.characterName}>Yoru</h3>
                 </div>
+  */}
 
                 <ReactAudioPlayer
                   src={characterVoiceLine}

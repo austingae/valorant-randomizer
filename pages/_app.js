@@ -10,8 +10,6 @@ import { useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
 
-  let [valorantMusic, setValorantMusic] = useState(false);
-
   return (
     <>
       <div className='ValorantRandomizerScreenNotShowing' style={{padding: '1rem'}}>
@@ -38,12 +36,6 @@ function MyApp({ Component, pageProps }) {
                 <img className='nav__logo' src='/images/logos/valorant-logo.svg' />
                 <h1 
                   className='nav__title' 
-                  onMouseOver={() => {
-                  setValorantMusic(true);
-                  }}
-                  onMouseLeave={() => {
-                    setValorantMusic(false);
-                  }}
                 
                 >Valorant Randomizer</h1>
               </div>
@@ -65,12 +57,6 @@ function MyApp({ Component, pageProps }) {
             </Link>
           </div>
         </nav>
-
-        {valorantMusic && <ReactAudioPlayer 
-          src='/music/valorant.mp3'
-          autoPlay='true'
-        />
-        }
       
         <Component {...pageProps} />
       </div>

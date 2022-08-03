@@ -21,6 +21,8 @@
 
 .characterContainer {
   position: relative;
+
+  margin-right: 5rem;
 }
 
 .characterImage {
@@ -60,7 +62,7 @@
   background-color: transparent;
 
 
-  padding: 1.3rem 1.8rem 1.3rem 1.8rem;
+  padding: 1.3rem 1.5rem 1.3rem 1.5rem;
 
   border-style: solid;
   border-color: white;
@@ -117,5 +119,5 @@
 
   font-family: 'Couture';
 
-  width: 300px;
+  width: 500px;
 }

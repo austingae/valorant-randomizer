@@ -25,10 +25,12 @@ function MyApp({ Component, pageProps }) {
           at playvalorantrandomizer@gmail.com 
         </p>
         <p>Thank you for your understanding, and have a wonderful day!</p>
-        <p style={{marginTop: '2rem'}}>- Valorant Randomizer Developer Team</p>
+        <p style={{marginTop: '2rem'}}>- DuhAppleBaby, Creator of The Valorant Randomizer</p>
 
       </div>
+      
       <div className='ValorantRandomizerScreen'>
+        {/*Navigation Bar*/}
         <nav className='nav'>
           <div className='nav__leftSection'>
             <Link href='/'>
@@ -57,8 +59,15 @@ function MyApp({ Component, pageProps }) {
             </Link>
           </div>
         </nav>
-      
+
+        {/*Components*/}
         <Component {...pageProps} />
+
+        {/*Footer*/}
+        <footer className='footer'>
+          <p className='createdByStatement'>The Valorant Randomizer created by DuhAppleBaby.</p>
+          <p className='disclaimerStatement'>The Valorant Randomizer is not associated with Riot Games, and it does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.</p>
+        </footer>
       </div>
     </>
   )

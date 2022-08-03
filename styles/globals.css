@@ -9,6 +9,12 @@
   .ValorantRandomizerScreenNotShowing {
     display: none;
   }
+
+  .ValorantRandomizerScreen {
+    display: flex;
+    flex-direction: column;
+  }
+
   html,
   body {
     padding: 0;
@@ -17,6 +23,8 @@
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
     position: relative;
+
+    background-color: black;
   }
 
   * {
@@ -86,5 +94,20 @@
 
   .nav__link:hover {
    color: rgba(2,0,36,1);
+  }
+
+  
+  .footer {
+    padding: 1rem;
+  }
+
+  .createdByStatement {
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+  }
+
+  .disclaimerStatement {
+    color: rgb(172, 172, 172);
+    font-size: 12px;
   }
 }

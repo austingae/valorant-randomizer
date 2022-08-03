@@ -1,15 +1,25 @@
 import React from 'react'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Character = ({characterInfoDatum, missions}) => {
   console.log(missions);
 
   let guns = ['ares','bucky','bulldog','classic','frenzy','ghost','guardian','judge','marshal','odin','operator','phantom','sheriff','shorty','spectre','stinger','vandal'];
+  let roundOneGuns = ['classic', 'shorty', 'frenzy', 'ghost', 'sheriff'];
 
   let [chosenGun, setChosenGun] = useState('');
   let [chosenMission, setChosenMission] = useState('');
   
+  useEffect(() => {
+    let randomIndex = Math.floor(Math.random() * roundOneGuns.length);
+    let randomOneGun = roundOneGuns[randomIndex];
+    setChosenGun(randomOneGun);
+
+    let randomIndex2 = Math.floor(Math.random() * missions.length);
+    let randomMission = missions[randomIndex2].mission;
+    setChosenMission(randomMission);
+  }, [])
   return (
     <main>
       <div>
@@ -33,7 +43,7 @@ const Character = ({characterInfoDatum, missions}) => {
           setChosenGun(randomGun);
         }}>Can't Afford the Gun?</button>
         <h2>Gun</h2>
-        {chosenGun.length > 1 && <img src={"/images/guns/" + chosenGun + ".png"} />}
+        <img src={"/images/guns/" + chosenGun + ".png"} />
         <h2>Mission</h2>
         <p>{chosenMission}</p>
       </div>

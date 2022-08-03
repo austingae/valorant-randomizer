@@ -13,7 +13,7 @@ const HowToUse = () => {
       <img src='/how-to-use-images-videos/images/character-selection-2.png' />
       <h3>Step 3</h3>
       <img src='/how-to-use-images-videos/images/character-gun-mission.png' />
-      <h3>That's About It! Here's a Quick Demo:</h3>
+      <h3>That&apos;s About It! Here&apos;s a Quick Demo:</h3>
       
       <video style={{width: '800px', height: '800px'}}controls>
         <source src="/how-to-use-images-videos/video/demo-video.mov" type="video/mov" />

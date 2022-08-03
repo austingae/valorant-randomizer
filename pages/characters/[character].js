@@ -45,7 +45,7 @@ const Character = ({characterInfoDatum, missions}) => {
         <h2>Gun</h2>
         <img src={"/images/guns/" + chosenGun + ".png"} />
         <h2>Mission</h2>
-        <p>{chosenMission.replace(',','&apos')}</p>
+        <p>{chosenMission.replace(',','&apos;')}</p>
       </div>
     </main>
 

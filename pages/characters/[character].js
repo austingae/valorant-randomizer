@@ -41,11 +41,11 @@ const Character = ({characterInfoDatum, missions}) => {
           let randomIndex = Math.floor(Math.random() * guns.length);
           let randomGun = guns[randomIndex];
           setChosenGun(randomGun);
-        }}>Can't Afford the Gun?</button>
+        }}>Can&apos;t Afford the Gun?</button>
         <h2>Gun</h2>
         <img src={"/images/guns/" + chosenGun + ".png"} />
         <h2>Mission</h2>
-        <p>{chosenMission}</p>
+        <p>{chosenMission.replace(',','&apos')}</p>
       </div>
     </main>
 

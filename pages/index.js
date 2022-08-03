@@ -46,7 +46,7 @@ export default function Home() {
     let TheChosenOne;
 
     const characterNames = [
-      'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Jett', 'Kayo', 'Killjoy', 'Neon',
+      'Astra', 'Breach', 'Brimstone', 'Chamber', 'Cypher', 'Fade', 'Jett', 'Kayo', 'Killjoy', 'Neon',
       'Omen', 'Phoenix', 'Raze', 'Reyna', 'Sage', 'Skye', 'Sova', 'Viper', 'Yoru'
     ];
 

@@ -111,13 +111,13 @@
     "mission": "Every time your team gets a kill, compliment your team five times in chat."
   },  
   {
-    "mission": "If you shoot before spike has been planted, you cannot shoot after spike has been planted. And vice versa."
+    "mission": "If you shoot before spike has been planted, you cannot shoot after spike has been planted. On the other hand, if you don't shoot before spike has been planted, you can shoot after spike has been planted."
   },
   {
-    "mission": "Play on max mouse sensitivity."
+    "mission": "Play on max mouse sensitivity. How to Change Mouse Sensitivity: Settings -> General -> Mouse -> Sensitivity: Aim"
   },  
   {
-    "mission": "Play on the lowest mouse sensitivity."
+    "mission": "Play on the lowest mouse sensitivity. How to Change Mouse Sensitivity: Settings -> General -> Mouse -> Sensitivity: Aim"
   },  
   {
     "mission": "You can only use your 'W' key for movement."
@@ -130,6 +130,30 @@
   },  
   {
     "mission": "Every time you get a kill, spray on the dead body. You cannot shoot until you do so."
+  },
+  {
+    "mission": "Play with Inverted Mouse On. How to Turn on Inverted Mouse: Settings -> General -> Mouse -> Invert Mouse: On"
+  },
+  {
+    "mission": "You must use all of your pistol bullets before using your main weapon. You cannot shoot your pistol during Buy Phase."
+  },
+  {
+    "mission": "You need to be healthy! Stand up while playing this round."
+  },
+  {
+    "mission": "Your chair needs a rest from your butt! Get off your chair, and then sit down on the floor while playing this round."
+  },
+  {
+    "mission": "Your right hand will control your keyboard. And your left hand will control your mouse."
+  },
+  {
+    "mission": "You must prefire all corners."
+  },
+  {
+    "mission": "You can only use 'A' and 'D' keys to move."
+  },
+  {
+    "mission": "You can only use your index finger for the keyboard."
   }
 ]
 

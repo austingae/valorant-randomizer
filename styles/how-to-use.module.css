@@ -1,0 +1,50 @@
+.howToUse {
+  color: white;
+  text-align: center;
+
+  margin-bottom: 7rem;
+}
+
+.stepTitle {
+  text-decoration: underline;
+}
+.stepImage {
+  width: min(60%, 1000px);
+  margin-bottom: 3rem;
+}
+
+.demoVideo {
+  /*For some reason, the text-align: center on .howToUse did not center .demoVideo. Therefore, I had to add display: block, and then margin-inline: auto to center .demoVideo*/
+  display: block;
+  margin-inline: auto;
+
+  width: min(60%, 1000px);
+}
+
+.readyTitle {
+  margin-top: 5rem;
+  font-size: 30px;
+}
+
+.playButton {
+  color: rgb(236,232,225);
+  background-image: linear-gradient(to right, rgb(182, 52, 63), rgb(255,70,86), rgb(97, 66, 66));
+
+  font-family: 'Couture';
+
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  border: none;
+
+  display: block;
+  margin-inline: auto;
+
+  margin-top: 3rem;
+
+  cursor: pointer;
+
+  transition: background-position 1s ease-out;  
+}
+
+.playButton:hover {
+  background-position:247px; 
+}

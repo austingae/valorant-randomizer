@@ -2,8 +2,22 @@ import React from 'react'
 
 import { useState, useEffect } from 'react'
 
+import styles from '../../styles/character.module.css';
+
 const Character = ({characterInfoDatum, missions}) => {
-  console.log(missions);
+  const valorantMaps = [
+    'Ascent',
+    'Bind',
+    'Breeze',
+    'Fracture',
+    'Haven',
+    'Icebox',
+    'Pearl'
+  ];
+
+  //A map randomly chosen and displayed on the website page.
+
+  let [valorantMap, setValorantMap] = useState();
 
   let guns = ['ares','bucky','bulldog','classic','frenzy','ghost','guardian','judge','marshal','odin','operator','phantom','sheriff','shorty','spectre','stinger','vandal'];
   let roundOneGuns = ['classic', 'shorty', 'frenzy', 'ghost', 'sheriff'];
@@ -19,33 +33,49 @@ const Character = ({characterInfoDatum, missions}) => {
     let randomIndex2 = Math.floor(Math.random() * missions.length);
     let randomMission = missions[randomIndex2].mission;
     setChosenMission(randomMission);
+
+    let randomIndex3 = Math.floor(Math.random() * valorantMaps.length);
+    let randomMap = valorantMaps[randomIndex3].toLowerCase();
+    setValorantMap(randomMap);
   }, [])
+
+  let randomlyPickGunAndMission = () => {
+    let randomIndex = Math.floor(Math.random() * guns.length);
+    let randomGun = guns[randomIndex];
+    setChosenGun(randomGun);
+
+    let randomIndex2 = Math.floor(Math.random() * missions.length);
+    let randomMission = missions[randomIndex2].mission;
+    setChosenMission(randomMission);
+  }
+
+  let randomlyPickGun = () => {
+    let randomIndex = Math.floor(Math.random() * guns.length);
+    let randomGun = guns[randomIndex];
+    setChosenGun(randomGun);
+  }
   return (
     <main>
-      <div>
-        <img src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} />
-        <h3>{characterInfoDatum.name}</h3>
-        <p>{characterInfoDatum.role}</p>
+      <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + 'ascent' + ".png"} />
 
-        <button onClick={() => {
-          let randomIndex = Math.floor(Math.random() * guns.length);
-          let randomGun = guns[randomIndex];
-          setChosenGun(randomGun);
+      <div className={styles.characterMain}>
+        <div>
+          <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} />
+          <h3 className={styles.characterName}>{characterInfoDatum.name}</h3>
+          <p className={styles.characterRole}>{characterInfoDatum.role}</p>
+        </div>
 
-          let randomIndex2 = Math.floor(Math.random() * missions.length);
-          let randomMission = missions[randomIndex2].mission;
-          setChosenMission(randomMission);
-        }}>New Round, New Roll!</button>
-        
-        <button onClick={() => {
-          let randomIndex = Math.floor(Math.random() * guns.length);
-          let randomGun = guns[randomIndex];
-          setChosenGun(randomGun);
-        }}>Can&apos;t Afford the Gun?</button>
-        <h2>Gun</h2>
-        <img src={"/images/guns/" + chosenGun + ".png"} />
-        <h2>Mission</h2>
-        <p>{chosenMission}</p>
+        <div>
+          <button onClick={randomlyPickGunAndMission}>New Round, New Roll!</button>
+          
+          <button onClick={randomlyPickGun}>Can&apos;t Afford the Gun?</button>
+          <h2 className={styles.gunTitle}>Gun</h2>
+          <div className={styles.gunImageContainer}>
+            <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} />
+          </div>
+          <h2 className={styles.missionTitle}>Mission</h2>
+          <p className={styles.missionDescription}>{chosenMission}</p>
+        </div>
       </div>
     </main>
 

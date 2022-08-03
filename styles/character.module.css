@@ -1,26 +1,81 @@
-.characterContainer {
-  border-style: solid;
-  border-color: rgb(235,78,92);
-  height: 170px;
-  overflow: hidden;
-  padding: 1rem;
+.backgroundImageMap {
+  width: 100%;
+
+  height: 650px;
 
   position: relative;
+  z-index: 1;
+}
+
+.characterMain {
+  position: absolute;
+  top: 200px;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .characterImage {
-  width: 140px;
+  width: 400px;
+  margin-left: 70px;
 }
 
 .characterName {
-  color: rgb(236,231,225);
-
   position: absolute;
-  bottom: 0;
-  right: 10px;
+  top: -30px;
+  left: 20px;
 
-  font-family: "Couture";
+  font-size: 50px;
+  font-family: 'Valorant';
 
-  margin: 0rem;
-  margin-bottom: 0.5rem;
+  color: rgb(249,249,249);
+}
+
+.characterRole {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+
+  font-size: 20px;
+  font-family: 'Couture';
+
+  color: rgb(249,249,249);
+}
+
+.gunTitle {
+  color: rgb(249,249,249);
+
+  font-family: 'Couture';
+
+  font-size: 35px;
+}
+
+.gunImageContainer {
+  display: inline-block;
+  padding: 3rem;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-radius: 2rem;
+  border-color: rgba(255,70,86,1);
+
+  height: 100px;
+
+}
+.gunImage {
+  width: 200px;
+}
+
+.missionTitle {
+  color: rgb(249,249,249);
+
+  font-family: 'Couture';
+
+  font-size: 35px;
+}
+
+.missionDescription {
+  color: rgb(249,249,249);
+
+  font-family: 'Couture';
 }

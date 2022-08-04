@@ -7,7 +7,7 @@ import { ShareYourIdeasForm } from '../components/share-your-ideas-form';
 const ShareYourIdeas = () => {
   return (
     <>
-    <img className={styles.backgroundImage} src='/share-your-ideas-images/val3.png' />
+    <img className={styles.backgroundImage} src='/share-your-ideas-images/valorant-drawing.png' />
     <div className={styles.shareYourIdeasContainer}>
       <div className={styles.shareYourIdeas}>
         <h1 className={styles.shareYourIdeasTitle}>Share your Ideas!</h1>

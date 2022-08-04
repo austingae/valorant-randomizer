@@ -57,9 +57,10 @@ export default function Home() {
     setChosenValorantCharacter(TheChosenOne);
     setCharacterVoiceLine('/voicelines/' + TheChosenOne.toLowerCase() + '.mp3');
 
+    
     setTimeout(() => {
       router.push(`/characters/${TheChosenOne.toLowerCase()}`);
-    }, 4300)
+    }, 2700)
   }
 
   let [chosenValorantCharacter, setChosenValorantCharacter] = useState("");

@@ -66,18 +66,18 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>        
-        <title>Valorant Randomizer: Randomize Characters Guns, and Challenges</title>
+        <title>Valorant Randomizer: Randomize Characters, Guns, and Challenges</title>
         <meta name="description" content="Valorant Randomizer that not only randomizes characters and guns (that's too bland) but also fun challenges!" />
       </Head>
 
       <main className={styles.main}>
-          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".png"} alt="Valorant Map"/>
+          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".webp"} alt="Valorant Map"/>
 
           <div className={styles.body}>
             {/* Left Section: Map Image, Map Name, and Map Selection*/}
             <div className={styles.leftSection}>
               <div className={styles.mapImageContainer}>
-                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".png"} alt="Valorant Map"/>
+                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".webp"} alt="Valorant Map"/>
               </div>
               <h2 className={styles.mapName}>{valorantMap}</h2>
                
@@ -88,7 +88,7 @@ export default function Home() {
             <div className={styles.rightSection}>
               <div className={styles.chosenCharacterContainer}>
                 
-                {chosenValorantCharacter.length > 1 && <img className={styles.chosenCharacter} src={'/images/characters/' + chosenValorantCharacter.toLowerCase() + '.png'} />}
+                {chosenValorantCharacter.length > 1 && <img className={styles.chosenCharacter} src={'/images/characters/' + chosenValorantCharacter.toLowerCase() + '.webp'} />}
               </div>
 
               <div className={styles.characterSelection}>
@@ -96,7 +96,7 @@ export default function Home() {
                   valorantCharacterNames.map((characterName) => {
                     return (
                       <div key={characterName} className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == characterName ? 'gold' : 'rgb(204,204,204)', boxShadow: chosenValorantCharacter == characterName ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
-                        <img className={styles.characterImage} src={'/images/characters-icons/' + characterName.toLowerCase() + '.png'} alt="Character Icon"/>
+                        <img className={styles.characterImage} src={'/images/characters-icons/' + characterName.toLowerCase() + '.webp'} alt="Character Icon"/>
                       </div>
                     )
                   })

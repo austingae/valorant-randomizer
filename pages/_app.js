@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
                 >Valorant Randomizer</h1>
               </div>
             </Link>
-            <p className='nav__motto'>Randomize Your Characters, Guns, and Missions.</p>
+            <h2 className='nav__motto'>Randomize Your Characters, Guns, and Over 50 Fun Challenges.</h2>
           </div>
 
           <div className='nav__rightSection'>
@@ -53,11 +53,11 @@ function MyApp({ Component, pageProps }) {
               <a className='nav__link nav__link--marginRight'>Randomizer</a>
             </Link>
 
-            <Link href='/how-to-use/'>
+            <Link href='/how-to-use-valorant-randomizer/'>
               <a className='nav__link nav__link--marginRight'>How To Use</a>
             </Link>
 
-            <Link href='/share-your-ideas/'>
+            <Link href='/share-your-valorant-randomizer-ideas/'>
             <a className='nav__link'>Share Your Ideas</a>
             </Link>
           </div>
@@ -68,8 +68,11 @@ function MyApp({ Component, pageProps }) {
 
         {/*Footer*/}
         <footer className='footer'>
-          <p className='createdByStatement'>The Valorant Randomizer created by DuhAppleBaby.</p>
-          <p className='disclaimerStatement'>The Valorant Randomizer is not associated with Riot Games, and it does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.</p>
+          <p className='createdByStatement'>Valorant Randomizer created by DuhAppleBaby.</p>
+          <p className='disclaimerStatement'>Valorant Randomizer is not associated with <a href='https://playvalorant.com/en-us/' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Riot Games</a>, and it does not reflect the views or opinions of <a href='https://www.riotgames.com/en' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Riot Games</a> or anyone officially involved in producing or managing Riot Games properties.</p>
+          <p className='disclaimerStatement'><a href='https://valorant.fandom.com/wiki/Agents' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Valorant Characters</a> include Astra, Breach, Brimstone, Chamber, Cypher, Fade, Jett, Kayo, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, and Yoru.</p>
+          <p className='disclaimerStatement'><a href='https://liquipedia.net/valorant/Portal:Weapons' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Valorant Guns</a> include Classic, Shorty, Frenzy, Ghost, Sheriff, Stinger, Spectre, Bucky, Judge, Bulldog, Guardian, Phantom, Vandal, Marshal, Operator, Ares, and Odin.</p>
+          <p className='disclaimerStatement'><a href='https://valorant.fandom.com/wiki/Maps' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Valorant Maps</a> include Ascent, Bind, Breeze, Fracture, Haven, Icebox, and Pearl.</p>
         </footer>
       </main>
     </>

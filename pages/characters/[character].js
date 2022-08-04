@@ -63,11 +63,11 @@ const Character = ({characterInfoDatum, missions}) => {
         <meta name='description' content={`As ${characterInfoDatum.name}, randomize your guns and fun challenges every round!`} />
       </Head>
       <main>
-        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + valorantMap + ".png"} alt="Valorant Map"/>
+        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + valorantMap + ".webp"} alt="Valorant Map"/>
 
         <main className={styles.characterMain}>
           <div className={styles.characterContainer}>
-            <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} alt="Character Image"/>
+            <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".webp"} alt="Character Image"/>
             <h1 className={styles.characterName}>{characterInfoDatum.name}</h1>
             <p className={styles.characterRole}>{characterInfoDatum.role}</p>
           </div>
@@ -78,7 +78,7 @@ const Character = ({characterInfoDatum, missions}) => {
             <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
             <h2 className={styles.gunTitle}>Gun</h2>
             <div className={styles.gunImageContainer}>
-              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} alt="Gun Image"/>
+              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} alt="Gun Image"/>
             </div>
             <h2 className={styles.missionTitle}>Challenge</h2>
             <p className={styles.missionDescription}>{chosenMission}</p>

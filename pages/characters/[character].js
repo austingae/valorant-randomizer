@@ -73,7 +73,7 @@ const Character = ({characterInfoDatum, missions}) => {
           <div className={styles.gunImageContainer}>
             <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} />
           </div>
-          <h2 className={styles.missionTitle}>Mission</h2>
+          <h2 className={styles.missionTitle}>Challenge</h2>
           <p className={styles.missionDescription}>{chosenMission}</p>
         </div>
       </div>

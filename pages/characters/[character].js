@@ -59,11 +59,11 @@ const Character = ({characterInfoDatum, missions}) => {
   return (
     <>
       <Head>
-        <title>Valorant Character, Random Guns and Challenges</title>
-        <meta name='description' content='With your selected valorant character, Valorant Randomizer will randomize guns and fun challenges!' />
+        <title>As {characterInfoDatum.name}, Randomize Guns and Challenges</title>
+        <meta name='description' content={`As ${characterInfoDatum.name}, randomize your guns and fun challenges every round!`} />
       </Head>
       <main>
-        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + 'ascent' + ".png"} alt="Valorant Map"/>
+        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + valorantMap + ".png"} alt="Valorant Map"/>
 
         <main className={styles.characterMain}>
           <div className={styles.characterContainer}>

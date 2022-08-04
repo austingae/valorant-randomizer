@@ -1,6 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+import styles from '../styles/share-your-ideas-form.module.css';
+
+import { useState } from 'react';
+
 export const ShareYourIdeasForm = () => {
   const form = useRef();
 
@@ -16,13 +20,28 @@ export const ShareYourIdeasForm = () => {
       form.current.reset();
   };
 
+  let [isSent, setIsSent] = useState(false);
+
+  let submitButtonRef = useRef(null);
+
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Your Name</label>
-      <input type="text" name="valorantPlayerName" />
-      <label>Content</label>
-      <textarea name="content" />
-      <input type="submit" value="Send" />
+    <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
+      <div className={styles.section}>
+        <label className={styles.label}>Your Name</label>
+        <input className={styles.nameInputBox} type="text" name="valorantPlayerName" />
+      </div>
+      <div className={styles.section}>
+        <label className={styles.label}>Ideas/Feedback/Report a Bug</label>
+        <textarea className={styles.contentInputBox} name="content" />
+      </div>
+      <div className={styles.bottomSection}>
+        <input className={styles.submitButton} ref={submitButtonRef} type="submit" value="Send" onClick={() => {
+          setIsSent(true);
+          submitButtonRef.current.disabled = true;
+
+        }}/>
+        {isSent && <p>Your message has been received. DuhAppleBaby will reply soon!</p>}
+      </div>
     </form>
   );
 };

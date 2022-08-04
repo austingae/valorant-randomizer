@@ -2,7 +2,9 @@
   color: white;
   text-align: center;
 
-  margin-bottom: 7rem;
+  padding-bottom: 9rem;
+
+  background-image: linear-gradient(to right, rgb(0,0,0), rgb(49, 49, 49))
 }
 
 .stepTitle {
@@ -27,6 +29,8 @@
 }
 
 .playButton {
+  font-size: 18px;
+  font-weight: 400;
   color: rgb(236,232,225);
   background-image: linear-gradient(to right, rgb(182, 52, 63), rgb(255,70,86), rgb(97, 66, 66));
 

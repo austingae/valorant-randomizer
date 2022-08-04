@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 
 import styles from '../../styles/character.module.css';
 
+import Head from 'next/head';
 const Character = ({characterInfoDatum, missions}) => {
   const valorantMaps = [
     'Ascent',
@@ -55,30 +56,34 @@ const Character = ({characterInfoDatum, missions}) => {
     setChosenGun(randomGun);
   }
   return (
-    <main>
-      <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + 'ascent' + ".png"} />
+    <>
+      <Head>
+        <title>Valorant Character, Random Guns and Missions</title>
+      </Head>
+      <main>
+        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + 'ascent' + ".png"} />
 
-      <div className={styles.characterMain}>
-        <div className={styles.characterContainer}>
-          <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} />
-          <h3 className={styles.characterName}>{characterInfoDatum.name}</h3>
-          <p className={styles.characterRole}>{characterInfoDatum.role}</p>
-        </div>
-
-        <div>
-          <button className={`${styles.randomButton} ${styles.randomButtonMarginRight}`} onClick={randomlyPickGunAndMission}>New Round, New Roll!</button>
-          
-          <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
-          <h2 className={styles.gunTitle}>Gun</h2>
-          <div className={styles.gunImageContainer}>
-            <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} />
+        <div className={styles.characterMain}>
+          <div className={styles.characterContainer}>
+            <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} />
+            <h3 className={styles.characterName}>{characterInfoDatum.name}</h3>
+            <p className={styles.characterRole}>{characterInfoDatum.role}</p>
           </div>
-          <h2 className={styles.missionTitle}>Challenge</h2>
-          <p className={styles.missionDescription}>{chosenMission}</p>
-        </div>
-      </div>
-    </main>
 
+          <div>
+            <button className={`${styles.randomButton} ${styles.randomButtonMarginRight}`} onClick={randomlyPickGunAndMission}>New Round, New Roll!</button>
+            
+            <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
+            <h2 className={styles.gunTitle}>Gun</h2>
+            <div className={styles.gunImageContainer}>
+              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} />
+            </div>
+            <h2 className={styles.missionTitle}>Challenge</h2>
+            <p className={styles.missionDescription}>{chosenMission}</p>
+          </div>
+        </div>
+      </main>
+    </>
   )
 }
 

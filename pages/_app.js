@@ -8,10 +8,20 @@ import ReactAudioPlayer from 'react-audio-player';
 
 import { useState } from 'react';
 
+import Head from 'next/head';
+
 function MyApp({ Component, pageProps }) {
 
   return (
     <>
+    <Head>
+        <title>Valorant Randomizer: Randomize Characters Guns, and Challenges</title>
+        <meta name="description" content="Not only randomize Valorant characters and guns but also fun challenges!" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <meta charset="UTF-8"></meta>
+        <link rel="icon" href="/images/logos/valorant-logo.svg" />
+    </Head>
       <div className='ValorantRandomizerScreenNotShowing' style={{padding: '1rem'}}>
         <div style={{backgroundImage: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,29,1) 53%, rgba(255,70,86,1) 100%)', padding: '1rem', marginBottom: '2rem'}}>
           <img src="/images/logos/valorant-logo.svg" style={{width: '50px'}}/>

@@ -4,9 +4,13 @@ import styles from '../styles/share-your-ideas.module.css';
 
 import { ShareYourIdeasForm } from '../components/share-your-ideas-form';
 
+import Head from 'next/link';
 const ShareYourIdeas = () => {
   return (
     <>
+    <Head>
+      <title>Share your Ideas</title>
+    </Head>
     <img className={styles.backgroundImage} src='/share-your-ideas-images/valorant-drawing.png' />
     <div className={styles.shareYourIdeasContainer}>
       <div className={styles.shareYourIdeas}>

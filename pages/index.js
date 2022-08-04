@@ -69,13 +69,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Valorant Randomizer: Randomize Characters Guns, and Challenges</title>
-        <meta name="description" content="Not only randomize Valorant characters and guns but also fun challenges!" />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <meta charset="UTF-8"></meta>
-        <link rel="icon" href="/favicon.ico" />
+      <Head>        
       </Head>
 
       <main className={styles.main}>

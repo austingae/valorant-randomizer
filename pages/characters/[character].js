@@ -1,10 +1,11 @@
 import React from 'react'
-
 import { useState, useEffect } from 'react'
+
+import Head from 'next/head';
 
 import styles from '../../styles/character.module.css';
 
-import Head from 'next/head';
+
 const Character = ({characterInfoDatum, missions}) => {
   const valorantMaps = [
     'Ascent',
@@ -58,15 +59,16 @@ const Character = ({characterInfoDatum, missions}) => {
   return (
     <>
       <Head>
-        <title>Valorant Character, Random Guns and Missions</title>
+        <title>Valorant Character, Random Guns and Challenges</title>
+        <meta name='description' content='With your selected valorant character, Valorant Randomizer will randomize guns and fun challenges!' />
       </Head>
       <main>
-        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + 'ascent' + ".png"} />
+        <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + 'ascent' + ".png"} alt="Valorant Map"/>
 
-        <div className={styles.characterMain}>
+        <main className={styles.characterMain}>
           <div className={styles.characterContainer}>
-            <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} />
-            <h3 className={styles.characterName}>{characterInfoDatum.name}</h3>
+            <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".png"} alt="Character Image"/>
+            <h1 className={styles.characterName}>{characterInfoDatum.name}</h1>
             <p className={styles.characterRole}>{characterInfoDatum.role}</p>
           </div>
 
@@ -76,12 +78,12 @@ const Character = ({characterInfoDatum, missions}) => {
             <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
             <h2 className={styles.gunTitle}>Gun</h2>
             <div className={styles.gunImageContainer}>
-              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} />
+              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} alt="Gun Image"/>
             </div>
             <h2 className={styles.missionTitle}>Challenge</h2>
             <p className={styles.missionDescription}>{chosenMission}</p>
           </div>
-        </div>
+        </main>
       </main>
     </>
   )

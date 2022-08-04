@@ -1,31 +1,24 @@
-import '../styles/globals.css'
-
-import "../styles/fonts.css"
-
 import Link from 'next/link'
-
-import ReactAudioPlayer from 'react-audio-player';
-
-import { useState } from 'react';
-
 import Head from 'next/head';
+
+import '../styles/globals.css'
+import "../styles/fonts.css"
 
 function MyApp({ Component, pageProps }) {
 
   return (
     <>
     <Head>
-        <title>Valorant Randomizer: Randomize Characters Guns, and Challenges</title>
-        <meta name="description" content="Not only randomize Valorant characters and guns but also fun challenges!" />
         <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Type" content="text/html charset=utf-8" />
+
         <link rel="icon" href="/images/logos/valorant-logo.svg" />
     </Head>
       <div className='ValorantRandomizerScreenNotShowing' style={{padding: '1rem'}}>
         <div style={{backgroundImage: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,1,29,1) 53%, rgba(255,70,86,1) 100%)', padding: '1rem', marginBottom: '2rem'}}>
-          <img src="/images/logos/valorant-logo.svg" style={{width: '50px'}}/>
-          <h2 style={{fontFamily: "Valorant", fontSize: '35px', marginBottom: '0rem', color: 'rgb(249,249,249)'}}>Valorant Randomizer</h2>
+          <img src="/images/logos/valorant-logo.svg" style={{width: '50px'}} alt="Valorant Logo"/>
+          <h1 style={{fontFamily: "Valorant", fontSize: '35px', marginBottom: '0rem', color: 'rgb(249,249,249)'}}>Valorant Randomizer</h1>
           <p style={{fontFamily: "Couture", marginTop: '0.5rem', marginLeft: '0.5rem', color: 'rgb(249,249,249)'}}>Randomize Characters, Guns, and Challenges.</p>
         </div>
         <h2>Hello There,</h2>
@@ -39,13 +32,13 @@ function MyApp({ Component, pageProps }) {
 
       </div>
       
-      <div className='ValorantRandomizerScreen'>
+      <main className='ValorantRandomizerScreen'>
         {/*Navigation Bar*/}
         <nav className='nav'>
           <div className='nav__leftSection'>
             <Link href='/'>
               <div className='nav__logoTitleContainer'>
-                <img className='nav__logo' src='/images/logos/valorant-logo.svg' />
+                <img className='nav__logo' src='/images/logos/valorant-logo.svg' alt="Valorant Logo"/>
                 <h1 
                   className='nav__title' 
                 
@@ -78,7 +71,7 @@ function MyApp({ Component, pageProps }) {
           <p className='createdByStatement'>The Valorant Randomizer created by DuhAppleBaby.</p>
           <p className='disclaimerStatement'>The Valorant Randomizer is not associated with Riot Games, and it does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.</p>
         </footer>
-      </div>
+      </main>
     </>
   )
 }

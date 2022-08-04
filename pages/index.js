@@ -1,15 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
-import Dropdown from 'react-dropdown';
-import '../node_modules/react-dropdown/style.css';
-
-import { useState, useRef, useEffect } from 'react';
-
+import { useState, useEffect } from 'react'
 import ReactAudioPlayer from 'react-audio-player';
 
+import Head from 'next/head'
 import { useRouter } from 'next/router'
+
+import styles from '../styles/Home.module.css'
+import '../node_modules/react-dropdown/style.css';
 
 export default function Home() {
 
@@ -70,16 +66,18 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>        
+        <title>Valorant Randomizer: Randomize Characters Guns, and Challenges</title>
+        <meta name="description" content="Valorant Randomizer that not only randomizes characters and guns (that's too bland) but also fun challenges!" />
       </Head>
 
       <main className={styles.main}>
-          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".png"} />
+          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".png"} alt="Valorant Map"/>
 
           <div className={styles.body}>
             {/* Left Section: Map Image, Map Name, and Map Selection*/}
             <div className={styles.leftSection}>
               <div className={styles.mapImageContainer}>
-                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".png"} />
+                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".png"} alt="Valorant Map"/>
               </div>
               <h2 className={styles.mapName}>{valorantMap}</h2>
                
@@ -98,7 +96,7 @@ export default function Home() {
                   valorantCharacterNames.map((characterName) => {
                     return (
                       <div key={characterName} className={styles.characterContainer} style={{borderColor: chosenValorantCharacter == characterName ? 'gold' : 'rgb(204,204,204)', boxShadow: chosenValorantCharacter == characterName ? '-2px 10px 34px 0px rgba(255,215,0,0.75) inset' : ""}}>
-                        <img className={styles.characterImage} src={'/images/characters-icons/' + characterName.toLowerCase() + '.png'} />
+                        <img className={styles.characterImage} src={'/images/characters-icons/' + characterName.toLowerCase() + '.png'} alt="Character Icon"/>
                       </div>
                     )
                   })

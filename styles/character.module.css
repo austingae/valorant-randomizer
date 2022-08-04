@@ -9,7 +9,7 @@
 
 .characterMain {
   position: absolute;
-  top: 200px;
+  top: 210px;
   z-index: 5;
 
   display: flex;
@@ -22,7 +22,7 @@
 .characterContainer {
   position: relative;
 
-  margin-right: 5rem;
+  margin-right: 9rem;
 }
 
 .characterImage {
@@ -81,12 +81,16 @@
 .randomButtonMarginRight {
   margin-right: 1rem;
 }
+
 .gunTitle {
   color: rgb(249,249,249);
 
   font-family: 'Couture';
 
   font-size: 35px;
+
+  margin-top: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .gunImageContainer {
@@ -101,6 +105,8 @@
 
   background-color: transparent;
 
+  margin-bottom: 2rem;
+
 }
 .gunImage {
   width: 300px;
@@ -112,6 +118,8 @@
   font-family: 'Couture';
 
   font-size: 35px;
+
+  margin-bottom: 0rem;
 }
 
 .missionDescription {
@@ -120,4 +128,24 @@
   font-family: 'Couture';
 
   width: 500px;
+
+  margin-top: 0.8rem;
+}
+
+@media screen and (min-width: 1500px) {
+  .characterContainer {
+    margin-right: 11rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .characterContainer {
+    margin-right: 14rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .characterContainer {
+    margin-right: 19rem;
+  }
 }

@@ -68,7 +68,7 @@ const Character = ({characterInfoDatum, missions}) => {
         <div>
           <button className={`${styles.randomButton} ${styles.randomButtonMarginRight}`} onClick={randomlyPickGunAndMission}>New Round, New Roll!</button>
           
-          <button  className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
+          <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
           <h2 className={styles.gunTitle}>Gun</h2>
           <div className={styles.gunImageContainer}>
             <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".png"} />

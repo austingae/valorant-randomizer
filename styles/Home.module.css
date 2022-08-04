@@ -44,15 +44,6 @@
   color: rgb(236,231,225);
 }
 
-.dropDown {
-  font-family: 'Couture';
-}
-
-.dropDownControl {
-  color: white;
-  background-color: transparent;
-}
-
 .chosenCharacterContainer {
   text-align: center;
   height: 383.305px;
@@ -89,7 +80,7 @@
   border: none;
 
   display: block;
-  margin-inline: auto;
+
   margin-top: 11rem;
 
   cursor: pointer;
@@ -100,4 +91,52 @@
 
 .rollYourCharacterButton:hover {
   background-position:204px; 
+}
+
+@media screen and (min-width: 1550px) {
+  .mapImage {
+    width: 330px;
+    height: auto;
+    margin: 0.6rem;
+  }
+
+  .mapName {
+    font-size: 35px;
+  }
+
+  .rollYourCharacterButton {
+    font-size: 18px;
+    padding: 1rem 1.3rem 1rem 1.3rem;
+  }
+
+  .rollYourCharacterButton:hover {
+    background-position: 274px;
+  }
+
+  .leftSection {
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (min-width: 1850px) {
+  .mapImage {
+    width: 360px;
+    height: auto;
+    margin: 0.6rem;
+  }
+
+  .mapName {
+    font-size: 38px;
+  }
+
+  .leftSection {
+    margin-right: 13rem;
+  }
+  
+  .chosenCharacterContainer {
+    margin-bottom: 2.3rem;
+  }
+  .chosenCharacter {
+    width: 270px;
+  }
 }

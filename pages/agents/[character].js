@@ -24,6 +24,77 @@ const Character = ({characterInfoDatum, missions}) => {
   let guns = ['ares','bucky','bulldog','classic','frenzy','ghost','guardian','judge','marshal','odin','operator','phantom','sheriff','shorty','spectre','stinger','vandal'];
   let roundOneGuns = ['classic', 'shorty', 'frenzy', 'ghost', 'sheriff'];
 
+  let gunObjectArray = [
+    {
+      gun: 'ares',
+      cost: 1600
+    },
+    {
+      gun: 'bucky',
+      cost: 850
+    },
+    {
+      gun: 'bulldog',
+      cost: 2050
+    },
+    {
+      gun: 'classic',
+      cost: 0
+    },
+    {
+      gun: 'frenzy',
+      cost: 450
+    },
+    {
+      gun: 'ghost',
+      cost: 500
+    },
+    {
+      gun: 'guardian',
+      cost: 2250
+    },
+    {
+      gun: 'judge',
+      cost: 1850
+    },
+    {
+      gun: 'marshal',
+      cost: 950
+    },
+    {
+      gun: 'odin',
+      cost: 3200
+    },
+    {
+      gun: 'operator',
+      cost: 4700
+    },
+    {
+      gun: 'phantom',
+      cost: 2900
+    },
+    {
+      gun: 'sheriff',
+      cost: 800
+    },
+    {
+      gun: 'shorty',
+      cost: 150
+    },
+    {
+      gun: 'spectre',
+      cost: 1600
+    },
+    {
+      gun: 'stinger',
+      cost: 950
+    },
+    {
+      gun: 'vandal',
+      cost: 2900
+    },
+  ];
+
   let [chosenGun, setChosenGun] = useState('');
   let [chosenMission, setChosenMission] = useState('');
   
@@ -49,28 +120,70 @@ const Character = ({characterInfoDatum, missions}) => {
     setChosenMission(randomMission);
 
     if (randomMission == "You must be scoping at all times.") {
-      let scopingGuns = ['ares','bulldog','guardian','marshal','odin','operator','phantom','spectre','stinger','vandal'];
+      let scopingGuns = [];
+      scopingGuns = gunObjectArray.filter(gunObject => {
+        if (gunObject.gun == 'ares' || gunObject.gun == 'bulldog' || gunObject.gun == 'guardian' || gunObject.gun == 'marshal' || gunObject.gun == 'odin' || gunObject.gun == 'operator' || gunObject.gun == 'phantom' || gunObject.gun == 'spectre' || gunObject.gun == 'stinger' || gunObject.gun == 'vandal') {
+          return gunObject;
+        }
+      });
       let randomScopingIndex = Math.floor(Math.random() * scopingGuns.length);
-      let randomScopingGun = scopingGuns[randomScopingIndex];
+      let randomScopingGun = scopingGuns[randomScopingIndex].gun;
       setChosenGun(randomScopingGun);
     }
+
     else {
-      let randomIndex = Math.floor(Math.random() * guns.length);
-      let randomGun = guns[randomIndex];
+      let randomIndex = Math.floor(Math.random() * gunObjectArray.length);
+      let randomGun = gunObjectArray[randomIndex].gun;
       setChosenGun(randomGun);
     }
   }
 
   let randomlyPickGun = () => {
     if (chosenMission == "You must be scoping at all times.") {
-      let scopingGuns = ['ares','bulldog','guardian','marshal','odin','operator','phantom','spectre','stinger','vandal'];
-      let randomScopingIndex = Math.floor(Math.random() * scopingGuns.length);
-      let randomScopingGun = scopingGuns[randomScopingIndex];
+      let chosenScopingGunPrice;
+      let cheaperScopingGuns = [];
+
+      let scopingGuns = [];
+      scopingGuns = gunObjectArray.filter(gunObject => {
+        if (gunObject.gun == 'ares' || gunObject.gun == 'bulldog' || gunObject.gun == 'guardian' || gunObject.gun == 'marshal' || gunObject.gun == 'odin' || gunObject.gun == 'operator' || gunObject.gun == 'phantom' || gunObject.gun == 'spectre' || gunObject.gun == 'stinger' || gunObject.gun == 'vandal') {
+          return gunObject;
+        }
+      });
+
+      scopingGuns.forEach((scopingGunObject) => {
+        if (chosenGun == scopingGunObject.gun) {
+          chosenScopingGunPrice = scopingGunObject.cost;
+        }
+      });
+
+      scopingGuns.forEach((scopingGunObject) => {
+        if (chosenScopingGunPrice > scopingGunObject.cost) {
+          cheaperScopingGuns.push(scopingGunObject.gun);
+        }
+      })
+
+      let randomScopingIndex = Math.floor(Math.random() * cheaperScopingGuns.length);
+      let randomScopingGun = cheaperScopingGuns[randomScopingIndex];
       setChosenGun(randomScopingGun);
     }
+
     else {
-      let randomIndex = Math.floor(Math.random() * guns.length);
-      let randomGun = guns[randomIndex];
+      let chosenGunPrice;
+      let cheaperGuns = [];
+      gunObjectArray.forEach((gunObject) => {
+        if (chosenGun == gunObject.gun) {
+          chosenGunPrice = gunObject.cost;
+        }
+      })
+
+      gunObjectArray.forEach((gunObject) => {
+        if (chosenGunPrice > gunObject.cost) {
+          cheaperGuns.push(gunObject.gun);
+        }
+      })
+
+      let randomIndex = Math.floor(Math.random() * cheaperGuns.length);
+      let randomGun = cheaperGuns[randomIndex];
       setChosenGun(randomGun);
     }
 
@@ -98,7 +211,7 @@ const Character = ({characterInfoDatum, missions}) => {
             <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
             <h2 className={styles.gunTitle}>Gun</h2>
             <div className={styles.gunImageContainer}>
-              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} alt="Gun Image"/>
+              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} alt="That was the cheapest gun!" style={{color: 'white'}}/>
             </div>
             <h2 className={styles.missionTitle}>Challenge</h2>
             <p className={styles.missionDescription}>{chosenMission}</p>

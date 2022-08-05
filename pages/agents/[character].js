@@ -28,13 +28,15 @@ const Character = ({characterInfoDatum, missions}) => {
   let [chosenMission, setChosenMission] = useState('');
   
   useEffect(() => {
+    let randomIndex2 = Math.floor(Math.random() * missions.length);
+    let doableMissions = missions.filter(mission => mission.mission != "You must be scoping at all times.");
+    let randomMission = doableMissions[randomIndex2].mission;
+    setChosenMission(randomMission);
+
     let randomIndex = Math.floor(Math.random() * roundOneGuns.length);
     let randomOneGun = roundOneGuns[randomIndex];
     setChosenGun(randomOneGun);
-
-    let randomIndex2 = Math.floor(Math.random() * missions.length);
-    let randomMission = missions[randomIndex2].mission;
-    setChosenMission(randomMission);
+    
 
     let randomIndex3 = Math.floor(Math.random() * valorantMaps.length);
     let randomMap = valorantMaps[randomIndex3].toLowerCase();
@@ -42,19 +44,36 @@ const Character = ({characterInfoDatum, missions}) => {
   }, [])
 
   let randomlyPickGunAndMission = () => {
-    let randomIndex = Math.floor(Math.random() * guns.length);
-    let randomGun = guns[randomIndex];
-    setChosenGun(randomGun);
-
     let randomIndex2 = Math.floor(Math.random() * missions.length);
     let randomMission = missions[randomIndex2].mission;
     setChosenMission(randomMission);
+
+    if (randomMission == "You must be scoping at all times.") {
+      let scopingGuns = ['ares','bulldog','guardian','marshal','odin','operator','phantom','spectre','stinger','vandal'];
+      let randomScopingIndex = Math.floor(Math.random() * scopingGuns.length);
+      let randomScopingGun = scopingGuns[randomScopingIndex];
+      setChosenGun(randomScopingGun);
+    }
+    else {
+      let randomIndex = Math.floor(Math.random() * guns.length);
+      let randomGun = guns[randomIndex];
+      setChosenGun(randomGun);
+    }
   }
 
   let randomlyPickGun = () => {
-    let randomIndex = Math.floor(Math.random() * guns.length);
-    let randomGun = guns[randomIndex];
-    setChosenGun(randomGun);
+    if (chosenMission == "You must be scoping at all times.") {
+      let scopingGuns = ['ares','bulldog','guardian','marshal','odin','operator','phantom','spectre','stinger','vandal'];
+      let randomScopingIndex = Math.floor(Math.random() * scopingGuns.length);
+      let randomScopingGun = scopingGuns[randomScopingIndex];
+      setChosenGun(randomScopingGun);
+    }
+    else {
+      let randomIndex = Math.floor(Math.random() * guns.length);
+      let randomGun = guns[randomIndex];
+      setChosenGun(randomGun);
+    }
+
   }
   return (
     <>

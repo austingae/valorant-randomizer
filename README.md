@@ -21,4 +21,6 @@ Reddit SEO: https://seochatter.com/reddit-seo-strategy/
 
 Sitemaps:
 sitemaps in next.js: https://coderrocketfuel.com/article/add-a-sitemap-xml-file-to-your-next-js-website
+sitemaps in next.js: https://www.techomoro.com/how-to-add-an-xml-sitemap-in-a-next-js-app/
 sitemaps format: https://www.sitemaps.org/protocol.html
+sitemap on google search console: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap

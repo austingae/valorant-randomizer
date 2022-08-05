@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
         </div>
         <h2>Hello There,</h2>
         <p style={{lineHeight: '1.5rem'}}>You are seeing this message because you are trying to view this randomizer on a small screen-sized device, such as your phone, tablet, or small laptop.
-                                          This website only works on devices with screen sizes larger than 1440px. However, people have made requests for this randomizer to work on smaller screen sizes; and I think that's a good idea.
+                                          This website only works on devices with screen sizes larger than 1440px. However, people have made requests for this randomizer to work on smaller screen sizes; and I think that&apos;s a good idea.
                                           So I will make the changes as soon as possible. Thank you for your understanding.
         </p>
         <p>Thank you for your understanding, and have a wonderful day!</p>

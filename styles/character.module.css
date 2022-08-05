@@ -33,26 +33,28 @@
 .characterName {
   position: absolute;
   top: 20px;
-  left: -90px;
+  left: 20px;
 
   margin: 0px;
 
-  font-size: 50px;
+  font-size: 35px;
   font-family: 'Valorant';
 
   color: rgb(249,249,249);
+
 }
 
 .characterRole {
   position: absolute;
-  top: 55px;
-  left: -90px;
+  top: 45px;
+  left: 20px;
 
   font-size: 20px;
   font-family: 'Couture';
 
   color: rgb(249,249,249);
 }
+
 
 
 .randomButton {
@@ -87,7 +89,7 @@
 
   font-family: 'Couture';
 
-  font-size: 35px;
+  font-size: 30px;
 
   margin-top: 5rem;
   margin-bottom: 0.5rem;
@@ -117,7 +119,7 @@
 
   font-family: 'Couture';
 
-  font-size: 35px;
+  font-size: 30px;
 
   margin-bottom: 0rem;
 }
@@ -130,6 +132,36 @@
   width: 500px;
 
   margin-top: 0.8rem;
+}
+
+@media screen and (min-width: 1220px) {
+  .characterName {
+    left: -70px;
+  }
+  .characterRole {
+    left: -70px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .characterName {
+    top: 0px;
+    left: -90px;
+    font-size: 50px;
+  }
+
+  .characterRole {
+    top: 40px;
+    left: -90px;
+    font-size: 20px;
+  }
+
+  .gunTitle {
+    font-size: 35px;
+  }
+
+  .gunMission {
+    font-size: 35px;
+  }
 }
 
 @media screen and (min-width: 1500px) {

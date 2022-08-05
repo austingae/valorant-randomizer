@@ -22,9 +22,9 @@ function MyApp({ Component, pageProps }) {
           <p style={{fontFamily: "Couture", marginTop: '0.5rem', marginLeft: '0.5rem', color: 'rgb(249,249,249)'}}>Randomize Agents, Guns, and Challenges.</p>
         </div>
         <h2>Hello There,</h2>
-        <p style={{lineHeight: '1.5rem'}}>You are seeing this message because you are trying to view this randomizer on a small screen-sized device, such as your phone, tablet, or small laptop.
-                                          This website only works on devices with screen sizes larger than 1440px. However, people have made requests for this randomizer to work on smaller screen sizes; and I think that&apos;s a good idea.
-                                          So I will make the changes as soon as possible. Thank you for your understanding.
+        <p style={{lineHeight: '1.5rem'}}>You are seeing this message because you are trying to view this Valorant Randomizer on a small screen-sized device, such as your phone or tablet.
+                                          The Valorant Randomizer, because of its functionalities, only works on devices with screen sizes larger than 1024 pixels, such as your laptop or computer. 
+                                          If you are continuing to experience difficulties, email me at playvalorantrandomizer@gmail.com. I will help you out!
         </p>
         <p>Thank you for your understanding, and have a wonderful day!</p>
         <p style={{marginTop: '2rem'}}>- DuhAppleBaby, Creator of Valorant Randomizer</p>
@@ -54,10 +54,6 @@ function MyApp({ Component, pageProps }) {
 
             <Link href='/how-to-use-valorant-randomizer/'>
               <a className='nav__link nav__link--marginRight'>How To Use</a>
-            </Link>
-
-            <Link href='/share-your-valorant-randomizer-ideas/'>
-            <a className='nav__link'>Share Your Ideas</a>
             </Link>
           </div>
         </nav>

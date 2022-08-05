@@ -71,7 +71,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".webp"} alt="Valorant Randomizer Map"/>
+          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".png"} alt="Valorant Randomizer Map"/>
 
           <div className={styles.body}>
             {/* Left Section: Map Image, Map Name, and Map Selection*/}

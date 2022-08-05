@@ -13,6 +13,7 @@ const HowToUse = () => {
       <Head>
         <title>How to Use Valorant Randomizer</title>
         <meta name='description' content='Valorant Randomizer How To Use Guide.' />
+        
       </Head>
       <main className={styles.howToUse}>
         <h1 className={styles.title}>How To Use Valorant Randomizer</h1>

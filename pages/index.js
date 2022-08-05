@@ -55,7 +55,7 @@ export default function Home() {
 
     
     setTimeout(() => {
-      router.push(`/characters/${TheChosenOne.toLowerCase()}`);
+      router.push(`/agents/${TheChosenOne.toLowerCase()}`);
     }, 2700)
   }
 
@@ -66,22 +66,22 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>        
-        <title>Valorant Randomizer: Randomize Characters, Guns, and Challenges</title>
-        <meta name="description" content="Valorant Randomizer that not only randomizes characters and guns (that's too bland) but also fun challenges!" />
+        <title>Valorant Randomizer - Randomize Valorant Agents, Guns, and Challenges</title>
+        <meta name="description" content="Valorant Randomizer that not only randomizes agents and guns (that's too bland) but also fun challenges!" />
       </Head>
 
       <main className={styles.main}>
-          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".webp"} alt="Valorant Map"/>
+          <img className={styles.backgroundImageMap}src={"images/darkened-maps/" + valorantMap + ".webp"} alt="Valorant Randomizer Map"/>
 
           <div className={styles.body}>
             {/* Left Section: Map Image, Map Name, and Map Selection*/}
             <div className={styles.leftSection}>
               <div className={styles.mapImageContainer}>
-                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".webp"} alt="Valorant Map"/>
+                <img className={styles.mapImage} src={"images/maps/" + valorantMap + ".webp"} alt="Valorant Randomizer Map"/>
               </div>
               <h2 className={styles.mapName}>{valorantMap}</h2>
                
-               <button className={styles.rollYourCharacterButton} onClick={changeCharacterBorderColor}>Roll your Character</button>
+               <button className={styles.rollYourCharacterButton} onClick={changeCharacterBorderColor}>Random Valorant Agent</button>
             </div>
 
             {/*Right Section: Character Selection & Randomize Button */}

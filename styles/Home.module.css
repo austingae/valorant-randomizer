@@ -90,8 +90,9 @@
 }
 
 .rollYourCharacterButton:hover {
-  background-position:204px; 
+  background-position:230px;
 }
+
 
 @media screen and (min-width: 1550px) {
   .mapImage {
@@ -110,7 +111,7 @@
   }
 
   .rollYourCharacterButton:hover {
-    background-position: 274px;
+    background-position: 310px;
   }
 
   .leftSection {

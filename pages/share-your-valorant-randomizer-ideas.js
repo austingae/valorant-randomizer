@@ -17,7 +17,7 @@ const ShareYourIdeas = () => {
       <main className={styles.shareYourIdeasContainer}>
         <div className={styles.shareYourIdeas}>
           <h1 className={styles.shareYourIdeasTitle}>Share your Ideas!</h1>
-          <h3 className={styles.shareYourIdeasDescription}>Do you have a great idea for a wacky mission? Do you want to provide feedback to improve this randomizer? Do you want to report a bug? </h3>
+          <h3 className={styles.shareYourIdeasDescription}>Do you have a great idea for a wacky mission? Do you want to provide feedback to improve this Valorant Randomizer? Do you want to report a bug? </h3>
           <h3 className={styles.shareYourIdeasDescription}>DuhAppleBaby, the Creator of this Randomizer, would love to hear from you!</h3>
           <p className={styles.shareYourIdeasDescription2}>Contact DuhAppleBaby at <span className={styles.gmail}>playvalorantrandomizer@gmail.com</span> or fill out the contact form below!</p>
 

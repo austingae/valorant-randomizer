@@ -198,7 +198,7 @@ const Character = ({characterInfoDatum, missions}) => {
       <main>
         <img className={styles.backgroundImageMap} src={"/images/darkened-maps/" + valorantMap + ".png"} alt="Valorant Randomizer Map"/>
 
-        <main className={styles.characterMain}>
+        <div className={styles.characterMain}>
           <div className={styles.characterContainer}>
             <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".webp"} alt="Character Image"/>
             <h1 className={styles.characterName}>{characterInfoDatum.name}</h1>
@@ -209,14 +209,14 @@ const Character = ({characterInfoDatum, missions}) => {
             <button className={`${styles.randomButton} ${styles.randomButtonMarginRight}`} onClick={randomlyPickGunAndMission}>New Round, New Roll!</button>
             
             <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
-            <h2 className={styles.gunTitle}>Gun</h2>
+            <h2 className={styles.gunTitle}>Random Gun</h2>
             <div className={styles.gunImageContainer}>
               {chosenGun != undefined ? <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} style={{color: 'white'}}/> : <img className={styles.gunImage} src={"/images/guns/" + "classic" + ".webp"} style={{color: 'white'}}/>}
             </div>
-            <h2 className={styles.missionTitle}>Challenge</h2>
+            <h2 className={styles.missionTitle}>Random Challenge</h2>
             <p className={styles.missionDescription}>{chosenMission}</p>
           </div>
-        </main>
+        </div>
       </main>
     </>
   )

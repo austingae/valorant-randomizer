@@ -64,7 +64,7 @@ export default function Home() {
   let [characterVoiceLine, setCharacterVoiceLine] = useState("");
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>        
         <title>Valorant Randomizer - Randomize Valorant Agents, Guns, and Challenges</title>
         <meta name="description" content="Valorant Randomizer that not only randomizes agents and guns (that's too bland) but also fun challenges!" />
@@ -111,6 +111,6 @@ export default function Home() {
             </div>
         </div>
       </main>
-    </div>
+    </>
   )
 }

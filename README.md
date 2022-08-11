@@ -25,6 +25,12 @@ sitemaps in next.js: https://www.techomoro.com/how-to-add-an-xml-sitemap-in-a-ne
 sitemaps format: https://www.sitemaps.org/protocol.html
 sitemap on google search console: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap
 
+https://backlinko.com/seo-this-year
+https://backlinko.com/hub/seo/core-web-vitals
+https://backlinko.com/hub/seo/featured-snippets
+https://backlinko.com/hub/seo/meta-descriptions
+
+
 
 https://www.reddit.com/r/VALORANT/comments/wgqf1b/comment/ij3as0r/
 

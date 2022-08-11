@@ -38,13 +38,10 @@ function MyApp({ Component, pageProps }) {
             <Link href='/'>
               <div className='nav__logoTitleContainer'>
                 <img className='nav__logo' src='/images/logos/valorant-logo.svg' alt="Valorant Logo"/>
-                <h1 
-                  className='nav__title' 
-                
-                >Valorant Randomizer</h1>
+                <h1 className='nav__title'>Valorant Randomizer</h1>
               </div>
             </Link>
-            <h2 className='nav__motto'>Play Now! Randomize Your Agents, Weapons, and Over 50 Fun Challenges.</h2>
+            <h2 className='nav__motto'>Randomize Your Agents, Weapons, and Over 50 Fun Challenges.</h2>
           </div>
 
           <div className='nav__rightSection'>

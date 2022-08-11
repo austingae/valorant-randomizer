@@ -104,10 +104,14 @@
   .createdByStatement {
     font-size: 14px;
     color: rgb(172, 172, 172);
+
+    font-weight: 400;
   }
 
   .disclaimerStatement {
     color: rgb(172, 172, 172);
     font-size: 12px;
+
+    font-weight: 400;
   }
 }

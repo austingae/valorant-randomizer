@@ -66,8 +66,8 @@ export default function Home() {
   return (
     <>
       <Head>        
-        <title>Valorant Randomizer - Randomize Valorant Agents, Guns, and Challenges</title>
-        <meta name="description" content="Valorant Randomizer that not only randomizes agents and guns (that's too bland) but also fun challenges!" />
+        <title>Valorant Randomizer [Randomize Valorant Agents, Weapons, and Over 50 Challenges]</title>
+        <meta name="description" content="Valorant Randomizer/Generator that not only randomize agents and weapons (that's too bland) but also over 50 fun, random challenges!" />
       </Head>
 
       <main className={styles.main}>

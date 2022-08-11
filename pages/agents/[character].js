@@ -201,15 +201,15 @@ const Character = ({characterInfoDatum, missions}) => {
         <div className={styles.characterMain}>
           <div className={styles.characterContainer}>
             <img className={styles.characterImage} src={"/images/characters/" + characterInfoDatum.name.toLowerCase() + ".webp"} alt="Character Image"/>
-            <h1 className={styles.characterName}>{characterInfoDatum.name}</h1>
+            <h2 className={styles.characterName}>{characterInfoDatum.name}</h2>
             <p className={styles.characterRole}>{characterInfoDatum.role}</p>
           </div>
 
           <div>
             <button className={`${styles.randomButton} ${styles.randomButtonMarginRight}`} onClick={randomlyPickGunAndMission}>New Round, New Roll!</button>
             
-            <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
-            <h2 className={styles.gunTitle}>Random Gun</h2>
+            <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Weapon&#63;</button>
+            <h2 className={styles.gunTitle}>Random Weapon</h2>
             <div className={styles.gunImageContainer}>
               {chosenGun != undefined ? <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} style={{color: 'white'}}/> : <img className={styles.gunImage} src={"/images/guns/" + "classic" + ".webp"} style={{color: 'white'}}/>}
             </div>

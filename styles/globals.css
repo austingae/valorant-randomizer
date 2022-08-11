@@ -114,4 +114,41 @@
 
     font-weight: 400;
   }
+
+  .partnershipSection {
+    margin-top: 3rem;
+  }
+  
+  .partnershipSection__title {
+    color: rgb(172, 172, 172);
+    font-size: 14px
+  }
+
+  .partnerList {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .partner {
+    display: flex;
+    align-items: center;
+    background-color: rgb(70,70,73);
+    border-radius: 1rem;
+    padding: 0.4rem;
+    margin-right: 1rem;
+  }
+
+  .partner:hover {
+    background-color: rgb(45, 45, 45);
+  }
+
+  .partner__img {
+    width: 40px;
+  }
+
+  .partner_name {
+    color: rgb(172, 172, 172);
+    font-size: 12px;
+    text-decoration: none;
+  }
 }

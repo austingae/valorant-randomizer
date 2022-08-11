@@ -129,13 +129,24 @@
     flex-direction: row;
   }
 
+  .partner__link {
+    text-decoration: none;
+  }
+
   .partner {
-    display: flex;
-    align-items: center;
     background-color: rgb(70,70,73);
     border-radius: 1rem;
     padding: 0.4rem;
     margin-right: 1rem;
+
+    cursor: pointer;
+
+
+  }
+
+  .partner__img_and_name {
+    display: flex;
+    align-items: center;
   }
 
   .partner:hover {

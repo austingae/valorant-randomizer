@@ -71,9 +71,14 @@ function MyApp({ Component, pageProps }) {
           <div className='partnershipSection'>
             <h2 className='partnershipSection__title'>Check Out These Other Randomizers:</h2>
             <div className='partnerList'>
+             
               <div className='partner'>
-                <img className='partner__img' src='/images/partners/lolskinselector.png'/>
-                <a className='partner_name' href='https://kkmet.com/lss/'>League of Legends Skin Selector</a>
+                  <a className='partner__link' href='https://kkmet.com/lss/'>
+                    <div className='partner__img_and_name'>
+                      <img className='partner__img' src='/images/partners/lolskinselector.png'/>
+                      <p className='partner_name'>League of Legends Skin Selector</p>
+                    </div>
+                  </a>
               </div>
             </div>
           </div>

@@ -64,10 +64,19 @@ function MyApp({ Component, pageProps }) {
 
         {/*Footer*/}
         <footer className='footer'>
-          <h2 className='createdByStatement'>Valorant Randomizer created by DuhAppleBaby with support from dpepper and silveronepark. Contact DuhAppleBaby at playvalorantrandomizer@gmail.com or click <a href='mailto: playvalorantrandomizer@gmail.com' style={{color: 'rgb(172, 172, 172);'}}>here</a>.</h2>
-          <h2 className='createdByStatement'>Valorant Randomizer <a href='https://www.gdprprivacynotice.com/live.php?token=SfVdEvwK9VfpTAW2nRkCgMHEFLZSOnqt' target='_blank' rel='noreferrer' style={{color: 'rgb(172, 172, 172);'}}>Privacy Policy</a>.</h2>
+          <h2 className='createdByStatement'>Valorant Randomizer created by DuhAppleBaby with support from dpepper and silveronepark. Contact DuhAppleBaby at playvalorantrandomizer@gmail.com or click <a href='mailto: playvalorantrandomizer@gmail.com' style={{color: 'rgb(172, 172, 172);'}}>here</a>. Valorant Randomizer <a href='https://www.gdprprivacynotice.com/live.php?token=SfVdEvwK9VfpTAW2nRkCgMHEFLZSOnqt' target='_blank' rel='noreferrer' style={{color: 'rgb(172, 172, 172);'}}>Privacy Policy</a>.</h2>
           <h2 className='disclaimerStatement'>ValorantRandomizer isn&apos;t endorsed by <a href='https://playvalorant.com/en-us/' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Riot Games</a>, and it does not reflect the views or opinions of <a href='https://www.riotgames.com/en' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Riot Games</a> and doesn&apos;t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.</h2>
           <h2 className='disclaimerStatement'>Valorant Randomizer includes <a href='https://valorant.fandom.com/wiki/Agents' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Valorant Agents</a>: Astra, Breach, Brimstone, Chamber, Cypher, Fade, Jett, Kayo, Killjoy, Neon, Omen, Phoenix, Raze, Reyna, Sage, Skye, Sova, Viper, and Yoru. Valorant Randomizer includes <a href='https://liquipedia.net/valorant/Portal:Weapons' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Valorant Guns</a>: Classic, Shorty, Frenzy, Ghost, Sheriff, Stinger, Spectre, Bucky, Judge, Bulldog, Guardian, Phantom, Vandal, Marshal, Operator, Ares, and Odin. Valorant Randomizer includes <a href='https://valorant.fandom.com/wiki/Maps' rel='noreferrer' style={{color: 'rgb(172, 172, 172)', textDecoration: 'none'}}>Valorant Maps</a>: Ascent, Bind, Breeze, Fracture, Haven, Icebox, and Pearl.</h2>
+
+          <div className='partnershipSection' style={{marginTop: '3rem'}}>
+            <h2 style={{color: 'rgb(172, 172, 172)', fontSize: '14px'}}>Check Out These Other Randomizers:</h2>
+            <div className='partnerList' style={{display: 'flex', flexDirection: 'row'}}>
+              <div className='partner' style={{display: 'flex;', alignItems: 'center', backgroundColor: 'rgb(70,70,73)', borderRadius: '1rem', padding: '0.4rem', marginRight: '1rem'}}>
+                <img src='/images/partners/lolskinselector.png' style={{width: '40px'}}/>
+                <a href='https://kkmet.com/lss/' style={{color: 'rgb(172, 172, 172)', fontSize: '12px'}}>League of Legends Skin Selector</a>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </>

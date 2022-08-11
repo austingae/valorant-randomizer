@@ -211,7 +211,7 @@ const Character = ({characterInfoDatum, missions}) => {
             <button className={styles.randomButton} onClick={randomlyPickGun}>Can&apos;t Afford the Gun&#63;</button>
             <h2 className={styles.gunTitle}>Gun</h2>
             <div className={styles.gunImageContainer}>
-              <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} alt="That was the cheapest gun!" style={{color: 'white'}}/>
+              {chosenGun != undefined ? <img className={styles.gunImage} src={"/images/guns/" + chosenGun + ".webp"} style={{color: 'white'}}/> : <img className={styles.gunImage} src={"/images/guns/" + "classic" + ".webp"} style={{color: 'white'}}/>}
             </div>
             <h2 className={styles.missionTitle}>Challenge</h2>
             <p className={styles.missionDescription}>{chosenMission}</p>

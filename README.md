@@ -10,11 +10,11 @@ SEO
 Main:
 SEO Meta Tags: https://ahrefs.com/blog/seo-meta-tags/
 
-SEO: https://backlinko.com/rank-high-on-google#build-backlinks
+SEO: https://backlinko.com/rank-high-on-google
 
 Details:
 LSI Keywords Generator: https://www.keysearch.co/tools/lsi-keywords-generator
-What are backlinks?: https://backlinko.com/hub/seo/backlinks
+What are backlinks?: 
 How Google Search works (crawling, indexing, and then providing search results): https://developers.google.com/search/docs/advanced/guidelines/how-search-works?visit_id=637952707722935874-1683071357&rd=1
 Reddit SEO: https://seochatter.com/reddit-seo-strategy/
 
@@ -23,11 +23,6 @@ Reddit SEO: https://seochatter.com/reddit-seo-strategy/
 
 
 Sitemaps:
-sitemaps in next.js: https://coderrocketfuel.com/article/add-a-sitemap-xml-file-to-your-next-js-website
-sitemaps in next.js: https://www.techomoro.com/how-to-add-an-xml-sitemap-in-a-next-js-app/
-sitemaps format: https://www.sitemaps.org/protocol.html
-sitemap on google search console: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap
-
 https://backlinko.com/seo-this-year
 https://backlinko.com/hub/seo/core-web-vitals
 https://backlinko.com/hub/seo/featured-snippets
@@ -35,7 +30,34 @@ https://backlinko.com/hub/seo/meta-descriptions
 
 
 
+1) In _app.js, add meta tags for robots, viewport, and charset. In every page, add a <title> and a meta tag for description. 
+Source: 
+- meta tags: https://ahrefs.com/blog/seo-meta-tags/
+2) Add a sitemap for your website, and then ping Google to read your sitemap. A sitemap is a list of urls for Google to crawl. 
+Source: 
+- sitemaps in next.js: https://coderrocketfuel.com/article/add-a-sitemap-xml-file-to-your-next-js-website
+- sitemaps in next.js: https://www.techomoro.com/how-to-add-an-xml-sitemap-in-a-next-js-app/
+- sitemaps format: https://www.sitemaps.org/protocol.html
+- sitemap on google search console: https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap
+3) Try to get some dofollow backlinks, which are dofollow links from other websites that direct to your website. Getting dofollow backlinks tells Google that other websites find your website reliable and, therefore, increases your domain authority.
+Source: 
+- backlinks: https://backlinko.com/hub/seo/backlinks
+4) SEO v SEM: SEO focuses on getting traffic from organic search, aka non-paid search results. On the other hand, SEM focuses on getting traffic from both organic and paid search. Hence, SEM includes SEO. 
+Source: 
+- SEO v SEM: https://ahrefs.com/blog/seo-vs-sem/
+- organic search: https://ahrefs.com/blog/organic-search/
 
+
+
+frontload, aka put at the front, your keyword in your title; make your content at least 1800 words or longer; sprinkle your keyword into your content
+
+LSI keywords are words that are related to your main topic or keyword. For example, my keyword is "Valorant Randomizer," then my LSI keywords are randomize, random, agents, weapons, generator, valorant, etc. 
+
+Make your website mobile-friendly. Increase page speed. 
+
+Search Intent. 
+
+Keep your bounce rates low. Bounce rates are the the percentage of people who click on your website and immediately go back to google search results. 
 
 
 

@@ -3,6 +3,8 @@ Randomize your Agents, Guns, and Challenges
 
 Created by Austin Gae
 
+Website Link: https://www.playvalorantrandomizer.com
+Reddit Review of my Website Link: https://www.reddit.com/r/VALORANT/comments/wgqf1b/comment/ij3as0r/
 ---
 SEO
 Main:
@@ -15,6 +17,7 @@ LSI Keywords Generator: https://www.keysearch.co/tools/lsi-keywords-generator
 What are backlinks?: https://backlinko.com/hub/seo/backlinks
 How Google Search works (crawling, indexing, and then providing search results): https://developers.google.com/search/docs/advanced/guidelines/how-search-works?visit_id=637952707722935874-1683071357&rd=1
 Reddit SEO: https://seochatter.com/reddit-seo-strategy/
+
 
 
 
@@ -32,9 +35,11 @@ https://backlinko.com/hub/seo/meta-descriptions
 
 
 
-https://www.reddit.com/r/VALORANT/comments/wgqf1b/comment/ij3as0r/
 
-https://www.playvalorantrandomizer.com
+
+
+
+
 
 
 
@@ -93,5 +98,9 @@ Myth: myth@loaded.gg - Yes.
 Shroud: shroud@loaded.gg - Yes. 
 
 Get backlinks: 
-Zintro: https://www.zintro.com/profile/zi210b3d00?ref=#
-Tumblr
+League of Legends Skin Selector: https://kkmet.com/lss/
+pickrandom (via email): https://pickrandom.com/
+Apex Legends Randomizer (via discord): https://www.apexrandomizer.com/ 
+Minecraft toolbox: https://fasguy.net/minecraft_toolbox/info
+fortnite randomizer: https://fnbr.stratroulette.io/
+COD Randomizer: https://codrandom.com/

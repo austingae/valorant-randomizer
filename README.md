@@ -164,3 +164,119 @@ pickrandom (via email): https://pickrandom.com/
 Apex Legends Randomizer (via discord): https://www.apexrandomizer.com/ 
 fortnite randomizer: https://fnbr.stratroulette.io/
 COD Randomizer: https://codrandom.com/
+
+
+yellow as background and red as text color looks nice for a website that is playful, perhaps selling some playful items like pokemon cards or displaying some stuff that's casual. 
+
+blue (different types of blue), black, white, and maybe a bit of gold color: government websites and trustworthy websites
+https://www.whitehouse.gov/
+https://www.state.gov/
+https://www.defense.gov/
+https://www.britannica.com/
+https://www.scientificamerican.com/
+https://www.un.org/en/?
+
+rolex website uses green because green color represents money, which represents wealth. it also uses gold because gold color represents wealth. it also has the neutral colors of black and white. 
+https://www.rolex.com/en-us
+
+Robinhood, ameritrade, and fidelity use green color because green color represents money. 
+others, however, use blue color because blue color represents trust and calmnness. 
+https://www.schwab.com/
+https://www.merrilledge.com/
+https://www.sofi.com/
+https://www.webull.com/
+
+starbucks uses deep green because deep green color represents peace and calmness and environmentally friendly, and coffee does just that. 
+
+spotify uses lime green because lime green represents refreshness.
+
+lyft uses pink because pink color makes the user feel more welcome, non-threatening, and love for the users.
+
+dunkin donuts use colors orange and pink because those two colors combined are playful and easygoing.
+https://foodly.tn/tips/why-are-dunkin-donuts-colors-pink-and-orange/
+
+
+
+Red color grabs our attention. that's why many stores use red color. 
+
+Rarely is blue color used for food label. 
+
+black to convey seriousness. nyt, washington post, abc, nbc, wsj.
+https://www.businessinsider.com/branding-and-the-psychology-of-color-2012-12#brands-use-yellow-to-show-that-theyre-fun-and-friendly-6
+
+black is luxurious. luxurious companies such as chanel, hermes, louis vuitton, gucci. 
+https://www.businessinsider.com/branding-and-the-psychology-of-color-2012-12#brands-use-black-to-signify-exclusivity-and-glamor-5
+
+
+Source: 
+https://www.fingent.com/blog/red-sale-sign-psychology-color-retail-industry/#:~:text=The%20use%20of%20red%20color,easily%20read%20from%20a%20distance
+https://www.rd.com/article/why-so-many-logos-are-red/#:~:text=%E2%80%9CRed%20is%20associated%20with%20increased,which%20we%20see%20as%20red
+
+Red Color: 
+red bull uses red color that brings energy and strength.
+airbnb uses pinkish red color that brings love and belonging.
+source: https://www.impactplus.com/blog/psychology-red-in-marketing-branding-design
+
+https://www.linkedin.com/pulse/top-10-colors-increase-sales-daniel-disney/
+https://smallbiztrends.com/2014/06/psychology-of-colors.html
+
+
+
+
+
+Serif Fonts (traditional font) vs San Serif Fonts (modern font)
+Source: 
+https://w3-lab.com/4-types-of-fonts-their-variants-in-web-design-examples/
+https://www.canva.com/learn/serif-vs-sans-serif-fonts/
+
+
+
+- Government Websites:
+Serif 
+https://www.justice.gov/
+https://www.state.gov/
+https://www.commerce.gov/
+https://www.whitehouse.gov/
+
+San Serif
+https://www.cia.gov/ - CIA in its modernity. 
+https://www.fbijobs.gov/ - FBI in its modernity.
+https://www.dhs.gov/ 
+https://www.energy.gov/ - Energy Department in its modernity to stay updated with the newest energy technologies.
+https://www.usda.gov/
+
+- Playful Websites use san serifs: 
+https://www.dunkindonuts.com/en
+https://www.mcdonalds.com/us/en-us.html
+https://www.disney.com/
+https://www.knotts.com/
+https://www.universalstudioshollywood.com/web/en/us
+https://www.netflix.com/
+https://www.nintendo.com/
+https://www.marvel.com/
+https://www.pokemon.com/us/
+
+
+- Law Firms: 
+Some law firms' websites use serifs while others use san serifs. some of them use a combination of both. 
+
+- News Websites:
+Serif: 
+https://www.wsj.com/
+https://www.washingtonpost.com/
+https://www.nytimes.com/
+https://www.theguardian.com/us
+
+San Serifs:
+https://techcrunch.com/ - techncrunch uses san serifs to make the website feel modern because its website is all about informing us about technologies news
+https://www.theverge.com/ - same reason 
+https://gizmodo.com/ - same reason
+https://www.wired.com/ - same reason
+
+- University Websites
+Old Universities -- like Harvard, University of Rochestor, Yale University, and William and Mary College -- use a combination of Serif and San Serif. One thing I recognized was that headlines are usually Serif, and the texts below are usually San Serif; I think the universities made it this way to have a mix of traditional but modern feel to their websites. 
+
+Some newer universities -- like UCLA and UCSD -- have San Serifs because they were not founded centuries ago and are pretty much modern universities. 
+
+Universities that focus on STEM -- like CalTech and MIT -- use San Serif to give their websites a modernity look to it because technology is modernity. 
+

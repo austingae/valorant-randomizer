@@ -73,7 +73,7 @@ function MyApp({ Component, pageProps }) {
             <div className='partnerList'>
              
             <div className='partner'>
-                  <a className='partner__link' href='https://www.apexrandomizer.com/'>
+                  <a className='partner__link' href="https://www.apexrandomizer.com/?utm_source=valorant_randomizer&utm_medium=website&utm_campaign=randomizer">
                     <div className='partner__img_and_name'>
                       <img className='partner__img' src='/images/partners/apexrandomizer.webp'/>
                       <p className='partner_name'>Apex Randomizer</p>
